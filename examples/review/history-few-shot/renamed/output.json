@@ -1,0 +1,1472 @@
+{
+  "task_id": "fewshot-renamed-1839936c3c",
+  "status": "incomplete",
+  "replayed": false,
+  "mode": "live",
+  "missing_fields": [],
+  "error": null,
+  "result": {
+    "plan": null,
+    "steps": [
+      {
+        "step_id": "3ea8a46a6050442ba864190673ea0b7d-call-1",
+        "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-1",
+        "tool": "search_materials",
+        "arguments": {
+          "query": "校园毕业季",
+          "required_kinds": [
+            "campus_photo",
+            "graduate_message"
+          ]
+        },
+        "status": "succeeded",
+        "depends_on": [],
+        "plan_version": 0,
+        "result_ref": "3ea8a46a6050442ba864190673ea0b7d-call-1",
+        "active_in_current_plan": true
+      },
+      {
+        "step_id": "3ea8a46a6050442ba864190673ea0b7d-call-2",
+        "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-2",
+        "tool": "estimate_plan",
+        "arguments": {
+          "option_id": "campus_interview"
+        },
+        "status": "succeeded",
+        "depends_on": [],
+        "plan_version": 0,
+        "result_ref": "3ea8a46a6050442ba864190673ea0b7d-call-2",
+        "active_in_current_plan": true
+      },
+      {
+        "step_id": "3ea8a46a6050442ba864190673ea0b7d-call-3",
+        "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-3",
+        "tool": "estimate_plan",
+        "arguments": {
+          "option_id": "campus_interview"
+        },
+        "status": "succeeded",
+        "depends_on": [],
+        "plan_version": 0,
+        "result_ref": "3ea8a46a6050442ba864190673ea0b7d-call-3",
+        "active_in_current_plan": true
+      },
+      {
+        "step_id": "3ea8a46a6050442ba864190673ea0b7d-call-4",
+        "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-4",
+        "tool": "estimate_plan",
+        "arguments": {
+          "option_id": "campus_interview"
+        },
+        "status": "succeeded",
+        "depends_on": [],
+        "plan_version": 0,
+        "result_ref": "3ea8a46a6050442ba864190673ea0b7d-call-4",
+        "active_in_current_plan": true
+      },
+      {
+        "step_id": "3ea8a46a6050442ba864190673ea0b7d-call-5",
+        "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-5",
+        "tool": "estimate_plan",
+        "arguments": {
+          "option_id": "campus_memory_cards"
+        },
+        "status": "succeeded",
+        "depends_on": [],
+        "plan_version": 0,
+        "result_ref": "3ea8a46a6050442ba864190673ea0b7d-call-5",
+        "active_in_current_plan": true
+      },
+      {
+        "step_id": "3ea8a46a6050442ba864190673ea0b7d-call-6",
+        "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-6",
+        "tool": "estimate_plan",
+        "arguments": {
+          "option_id": "campus_interview"
+        },
+        "status": "succeeded",
+        "depends_on": [],
+        "plan_version": 0,
+        "result_ref": "3ea8a46a6050442ba864190673ea0b7d-call-6",
+        "active_in_current_plan": true
+      },
+      {
+        "step_id": "3ea8a46a6050442ba864190673ea0b7d-call-7",
+        "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-7",
+        "tool": "estimate_plan",
+        "arguments": {
+          "option_id": "campus_memory_cards"
+        },
+        "status": "succeeded",
+        "depends_on": [],
+        "plan_version": 0,
+        "result_ref": "3ea8a46a6050442ba864190673ea0b7d-call-7",
+        "active_in_current_plan": true
+      },
+      {
+        "step_id": "3ea8a46a6050442ba864190673ea0b7d-call-8",
+        "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-8",
+        "tool": "estimate_plan",
+        "arguments": {
+          "option_id": "campus_interview"
+        },
+        "status": "succeeded",
+        "depends_on": [],
+        "plan_version": 0,
+        "result_ref": "3ea8a46a6050442ba864190673ea0b7d-call-8",
+        "active_in_current_plan": true
+      },
+      {
+        "step_id": "3ea8a46a6050442ba864190673ea0b7d-call-9",
+        "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-9",
+        "tool": "estimate_plan",
+        "arguments": {
+          "option_id": "campus_memory_cards"
+        },
+        "status": "succeeded",
+        "depends_on": [],
+        "plan_version": 0,
+        "result_ref": "3ea8a46a6050442ba864190673ea0b7d-call-9",
+        "active_in_current_plan": true
+      },
+      {
+        "step_id": "3ea8a46a6050442ba864190673ea0b7d-call-10",
+        "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-10",
+        "tool": "estimate_plan",
+        "arguments": {
+          "option_id": "campus_interview"
+        },
+        "status": "succeeded",
+        "depends_on": [],
+        "plan_version": 0,
+        "result_ref": "3ea8a46a6050442ba864190673ea0b7d-call-10",
+        "active_in_current_plan": true
+      }
+    ],
+    "tool_results": [
+      {
+        "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-1",
+        "tool": "search_materials",
+        "arguments": {
+          "query": "校园毕业季",
+          "required_kinds": [
+            "campus_photo",
+            "graduate_message"
+          ]
+        },
+        "result": {
+          "status": "success",
+          "code": "ok",
+          "message": "素材检索完成",
+          "data": {
+            "search_id": "search-57532e0f9265",
+            "materials": [
+              {
+                "material_id": "campus-photo-01",
+                "kind": "campus_photo",
+                "title": "校园毕业合影示意素材",
+                "content": "合成场景：毕业生在图书馆前合影。仅文字素材描述，非真实照片。",
+                "tags": [
+                  "校园",
+                  "毕业",
+                  "毕业季"
+                ],
+                "synthetic": true
+              },
+              {
+                "material_id": "graduate-message-01",
+                "kind": "graduate_message",
+                "title": "毕业寄语示例",
+                "content": "合成寄语：把校园的光带向下一站，愿我们各自闪耀。",
+                "tags": [
+                  "校园",
+                  "毕业",
+                  "毕业季"
+                ],
+                "synthetic": true
+              }
+            ],
+            "covered_kinds": [
+              "campus_photo",
+              "graduate_message"
+            ],
+            "missing_kinds": []
+          },
+          "missing": [],
+          "issues": [],
+          "retryable": false,
+          "meta": {
+            "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-1",
+            "task_id": "fewshot-renamed-1839936c3c",
+            "catalog_version": "campus-renamed-evaluation-v1",
+            "started_at": "2026-11-01T13:39:08.125846+00:00",
+            "finished_at": "2026-11-01T13:39:08.125846+00:00"
+          }
+        }
+      },
+      {
+        "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-2",
+        "tool": "estimate_plan",
+        "arguments": {
+          "option_id": "campus_interview"
+        },
+        "result": {
+          "status": "success",
+          "code": "ok",
+          "message": "估算完成（可行性见 feasible，费用不累计）",
+          "data": {
+            "option_id": "campus_interview",
+            "catalog_version": "campus-renamed-evaluation-v1",
+            "evaluated_at": "2026-11-01T13:39:11.240989+00:00",
+            "line_items": [
+              {
+                "item_id": "concept",
+                "label": "策划",
+                "quantity": 1,
+                "unit_cost": 3,
+                "duration_minutes": 20,
+                "depends_on": [],
+                "subtotal": 3
+              },
+              {
+                "item_id": "shoot",
+                "label": "拍摄",
+                "quantity": 1,
+                "unit_cost": 10,
+                "duration_minutes": 60,
+                "depends_on": [
+                  "concept"
+                ],
+                "subtotal": 10
+              },
+              {
+                "item_id": "publish",
+                "label": "剪辑发布",
+                "quantity": 1,
+                "unit_cost": 6,
+                "duration_minutes": 40,
+                "depends_on": [
+                  "shoot"
+                ],
+                "subtotal": 6
+              }
+            ],
+            "estimated_total_cost": 19,
+            "duration_minutes": 120,
+            "projected_finish_at": "2026-11-01T15:39:11.240989+00:00",
+            "budget_gap": 5,
+            "time_gap_seconds": 0,
+            "missing": [],
+            "checks": {
+              "budget_ok": false,
+              "time_ok": true,
+              "dependencies_ok": false
+            },
+            "feasible": false,
+            "save_ready": false,
+            "estimate_id": "estimate-e3a3f09a46eb",
+            "script_id": null,
+            "plan_version": null
+          },
+          "missing": [],
+          "issues": [
+            {
+              "code": "budget_gap",
+              "message": "5"
+            }
+          ],
+          "retryable": false,
+          "meta": {
+            "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-2",
+            "task_id": "fewshot-renamed-1839936c3c",
+            "catalog_version": "campus-renamed-evaluation-v1",
+            "started_at": "2026-11-01T13:39:11.240989+00:00",
+            "finished_at": "2026-11-01T13:39:11.240989+00:00"
+          }
+        }
+      },
+      {
+        "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-3",
+        "tool": "estimate_plan",
+        "arguments": {
+          "option_id": "campus_interview"
+        },
+        "result": {
+          "status": "success",
+          "code": "ok",
+          "message": "估算完成（可行性见 feasible，费用不累计）",
+          "data": {
+            "option_id": "campus_interview",
+            "catalog_version": "campus-renamed-evaluation-v1",
+            "evaluated_at": "2026-11-01T13:39:14.412455+00:00",
+            "line_items": [
+              {
+                "item_id": "concept",
+                "label": "策划",
+                "quantity": 1,
+                "unit_cost": 3,
+                "duration_minutes": 20,
+                "depends_on": [],
+                "subtotal": 3
+              },
+              {
+                "item_id": "shoot",
+                "label": "拍摄",
+                "quantity": 1,
+                "unit_cost": 10,
+                "duration_minutes": 60,
+                "depends_on": [
+                  "concept"
+                ],
+                "subtotal": 10
+              },
+              {
+                "item_id": "publish",
+                "label": "剪辑发布",
+                "quantity": 1,
+                "unit_cost": 6,
+                "duration_minutes": 40,
+                "depends_on": [
+                  "shoot"
+                ],
+                "subtotal": 6
+              }
+            ],
+            "estimated_total_cost": 19,
+            "duration_minutes": 120,
+            "projected_finish_at": "2026-11-01T15:39:14.412455+00:00",
+            "budget_gap": 5,
+            "time_gap_seconds": 0,
+            "missing": [],
+            "checks": {
+              "budget_ok": false,
+              "time_ok": true,
+              "dependencies_ok": false
+            },
+            "feasible": false,
+            "save_ready": false,
+            "estimate_id": "estimate-236360fddfcd",
+            "script_id": null,
+            "plan_version": null
+          },
+          "missing": [],
+          "issues": [
+            {
+              "code": "budget_gap",
+              "message": "5"
+            }
+          ],
+          "retryable": false,
+          "meta": {
+            "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-3",
+            "task_id": "fewshot-renamed-1839936c3c",
+            "catalog_version": "campus-renamed-evaluation-v1",
+            "started_at": "2026-11-01T13:39:14.412455+00:00",
+            "finished_at": "2026-11-01T13:39:14.412455+00:00"
+          }
+        }
+      },
+      {
+        "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-4",
+        "tool": "estimate_plan",
+        "arguments": {
+          "option_id": "campus_interview"
+        },
+        "result": {
+          "status": "success",
+          "code": "ok",
+          "message": "估算完成（可行性见 feasible，费用不累计）",
+          "data": {
+            "option_id": "campus_interview",
+            "catalog_version": "campus-renamed-evaluation-v1",
+            "evaluated_at": "2026-11-01T13:39:17.659550+00:00",
+            "line_items": [
+              {
+                "item_id": "concept",
+                "label": "策划",
+                "quantity": 1,
+                "unit_cost": 3,
+                "duration_minutes": 20,
+                "depends_on": [],
+                "subtotal": 3
+              },
+              {
+                "item_id": "shoot",
+                "label": "拍摄",
+                "quantity": 1,
+                "unit_cost": 10,
+                "duration_minutes": 60,
+                "depends_on": [
+                  "concept"
+                ],
+                "subtotal": 10
+              },
+              {
+                "item_id": "publish",
+                "label": "剪辑发布",
+                "quantity": 1,
+                "unit_cost": 6,
+                "duration_minutes": 40,
+                "depends_on": [
+                  "shoot"
+                ],
+                "subtotal": 6
+              }
+            ],
+            "estimated_total_cost": 19,
+            "duration_minutes": 120,
+            "projected_finish_at": "2026-11-01T15:39:17.659550+00:00",
+            "budget_gap": 5,
+            "time_gap_seconds": 0,
+            "missing": [],
+            "checks": {
+              "budget_ok": false,
+              "time_ok": true,
+              "dependencies_ok": false
+            },
+            "feasible": false,
+            "save_ready": false,
+            "estimate_id": "estimate-881235d34783",
+            "script_id": null,
+            "plan_version": null
+          },
+          "missing": [],
+          "issues": [
+            {
+              "code": "budget_gap",
+              "message": "5"
+            }
+          ],
+          "retryable": false,
+          "meta": {
+            "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-4",
+            "task_id": "fewshot-renamed-1839936c3c",
+            "catalog_version": "campus-renamed-evaluation-v1",
+            "started_at": "2026-11-01T13:39:17.659550+00:00",
+            "finished_at": "2026-11-01T13:39:17.659550+00:00"
+          }
+        }
+      },
+      {
+        "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-5",
+        "tool": "estimate_plan",
+        "arguments": {
+          "option_id": "campus_memory_cards"
+        },
+        "result": {
+          "status": "success",
+          "code": "ok",
+          "message": "估算完成（可行性见 feasible，费用不累计）",
+          "data": {
+            "option_id": "campus_memory_cards",
+            "catalog_version": "campus-renamed-evaluation-v1",
+            "evaluated_at": "2026-11-01T13:39:20.880583+00:00",
+            "line_items": [
+              {
+                "item_id": "concept",
+                "label": "策划",
+                "quantity": 1,
+                "unit_cost": 3,
+                "duration_minutes": 20,
+                "depends_on": [],
+                "subtotal": 3
+              },
+              {
+                "item_id": "design",
+                "label": "图文制作",
+                "quantity": 1,
+                "unit_cost": 5,
+                "duration_minutes": 30,
+                "depends_on": [
+                  "concept"
+                ],
+                "subtotal": 5
+              },
+              {
+                "item_id": "publish",
+                "label": "发布",
+                "quantity": 1,
+                "unit_cost": 3,
+                "duration_minutes": 10,
+                "depends_on": [
+                  "design"
+                ],
+                "subtotal": 3
+              }
+            ],
+            "estimated_total_cost": 11,
+            "duration_minutes": 60,
+            "projected_finish_at": "2026-11-01T14:39:20.880583+00:00",
+            "budget_gap": 0,
+            "time_gap_seconds": 0,
+            "missing": [],
+            "checks": {
+              "budget_ok": true,
+              "time_ok": true,
+              "dependencies_ok": false
+            },
+            "feasible": true,
+            "save_ready": false,
+            "estimate_id": "estimate-600885038de4",
+            "script_id": null,
+            "plan_version": null
+          },
+          "missing": [],
+          "issues": [],
+          "retryable": false,
+          "meta": {
+            "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-5",
+            "task_id": "fewshot-renamed-1839936c3c",
+            "catalog_version": "campus-renamed-evaluation-v1",
+            "started_at": "2026-11-01T13:39:20.880583+00:00",
+            "finished_at": "2026-11-01T13:39:20.880583+00:00"
+          }
+        }
+      },
+      {
+        "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-6",
+        "tool": "estimate_plan",
+        "arguments": {
+          "option_id": "campus_interview"
+        },
+        "result": {
+          "status": "success",
+          "code": "ok",
+          "message": "估算完成（可行性见 feasible，费用不累计）",
+          "data": {
+            "option_id": "campus_interview",
+            "catalog_version": "campus-renamed-evaluation-v1",
+            "evaluated_at": "2026-11-01T13:39:24.330352+00:00",
+            "line_items": [
+              {
+                "item_id": "concept",
+                "label": "策划",
+                "quantity": 1,
+                "unit_cost": 3,
+                "duration_minutes": 20,
+                "depends_on": [],
+                "subtotal": 3
+              },
+              {
+                "item_id": "shoot",
+                "label": "拍摄",
+                "quantity": 1,
+                "unit_cost": 10,
+                "duration_minutes": 60,
+                "depends_on": [
+                  "concept"
+                ],
+                "subtotal": 10
+              },
+              {
+                "item_id": "publish",
+                "label": "剪辑发布",
+                "quantity": 1,
+                "unit_cost": 6,
+                "duration_minutes": 40,
+                "depends_on": [
+                  "shoot"
+                ],
+                "subtotal": 6
+              }
+            ],
+            "estimated_total_cost": 19,
+            "duration_minutes": 120,
+            "projected_finish_at": "2026-11-01T15:39:24.330352+00:00",
+            "budget_gap": 5,
+            "time_gap_seconds": 0,
+            "missing": [],
+            "checks": {
+              "budget_ok": false,
+              "time_ok": true,
+              "dependencies_ok": false
+            },
+            "feasible": false,
+            "save_ready": false,
+            "estimate_id": "estimate-407d8a9cb395",
+            "script_id": null,
+            "plan_version": null
+          },
+          "missing": [],
+          "issues": [
+            {
+              "code": "budget_gap",
+              "message": "5"
+            }
+          ],
+          "retryable": false,
+          "meta": {
+            "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-6",
+            "task_id": "fewshot-renamed-1839936c3c",
+            "catalog_version": "campus-renamed-evaluation-v1",
+            "started_at": "2026-11-01T13:39:24.330352+00:00",
+            "finished_at": "2026-11-01T13:39:24.331060+00:00"
+          }
+        }
+      },
+      {
+        "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-7",
+        "tool": "estimate_plan",
+        "arguments": {
+          "option_id": "campus_memory_cards"
+        },
+        "result": {
+          "status": "success",
+          "code": "ok",
+          "message": "估算完成（可行性见 feasible，费用不累计）",
+          "data": {
+            "option_id": "campus_memory_cards",
+            "catalog_version": "campus-renamed-evaluation-v1",
+            "evaluated_at": "2026-11-01T13:39:27.658833+00:00",
+            "line_items": [
+              {
+                "item_id": "concept",
+                "label": "策划",
+                "quantity": 1,
+                "unit_cost": 3,
+                "duration_minutes": 20,
+                "depends_on": [],
+                "subtotal": 3
+              },
+              {
+                "item_id": "design",
+                "label": "图文制作",
+                "quantity": 1,
+                "unit_cost": 5,
+                "duration_minutes": 30,
+                "depends_on": [
+                  "concept"
+                ],
+                "subtotal": 5
+              },
+              {
+                "item_id": "publish",
+                "label": "发布",
+                "quantity": 1,
+                "unit_cost": 3,
+                "duration_minutes": 10,
+                "depends_on": [
+                  "design"
+                ],
+                "subtotal": 3
+              }
+            ],
+            "estimated_total_cost": 11,
+            "duration_minutes": 60,
+            "projected_finish_at": "2026-11-01T14:39:27.658833+00:00",
+            "budget_gap": 0,
+            "time_gap_seconds": 0,
+            "missing": [],
+            "checks": {
+              "budget_ok": true,
+              "time_ok": true,
+              "dependencies_ok": false
+            },
+            "feasible": true,
+            "save_ready": false,
+            "estimate_id": "estimate-b7608efd726a",
+            "script_id": null,
+            "plan_version": null
+          },
+          "missing": [],
+          "issues": [],
+          "retryable": false,
+          "meta": {
+            "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-7",
+            "task_id": "fewshot-renamed-1839936c3c",
+            "catalog_version": "campus-renamed-evaluation-v1",
+            "started_at": "2026-11-01T13:39:27.658833+00:00",
+            "finished_at": "2026-11-01T13:39:27.658833+00:00"
+          }
+        }
+      },
+      {
+        "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-8",
+        "tool": "estimate_plan",
+        "arguments": {
+          "option_id": "campus_interview"
+        },
+        "result": {
+          "status": "success",
+          "code": "ok",
+          "message": "估算完成（可行性见 feasible，费用不累计）",
+          "data": {
+            "option_id": "campus_interview",
+            "catalog_version": "campus-renamed-evaluation-v1",
+            "evaluated_at": "2026-11-01T13:39:30.977498+00:00",
+            "line_items": [
+              {
+                "item_id": "concept",
+                "label": "策划",
+                "quantity": 1,
+                "unit_cost": 3,
+                "duration_minutes": 20,
+                "depends_on": [],
+                "subtotal": 3
+              },
+              {
+                "item_id": "shoot",
+                "label": "拍摄",
+                "quantity": 1,
+                "unit_cost": 10,
+                "duration_minutes": 60,
+                "depends_on": [
+                  "concept"
+                ],
+                "subtotal": 10
+              },
+              {
+                "item_id": "publish",
+                "label": "剪辑发布",
+                "quantity": 1,
+                "unit_cost": 6,
+                "duration_minutes": 40,
+                "depends_on": [
+                  "shoot"
+                ],
+                "subtotal": 6
+              }
+            ],
+            "estimated_total_cost": 19,
+            "duration_minutes": 120,
+            "projected_finish_at": "2026-11-01T15:39:30.977498+00:00",
+            "budget_gap": 5,
+            "time_gap_seconds": 0,
+            "missing": [],
+            "checks": {
+              "budget_ok": false,
+              "time_ok": true,
+              "dependencies_ok": false
+            },
+            "feasible": false,
+            "save_ready": false,
+            "estimate_id": "estimate-d6e21697e433",
+            "script_id": null,
+            "plan_version": null
+          },
+          "missing": [],
+          "issues": [
+            {
+              "code": "budget_gap",
+              "message": "5"
+            }
+          ],
+          "retryable": false,
+          "meta": {
+            "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-8",
+            "task_id": "fewshot-renamed-1839936c3c",
+            "catalog_version": "campus-renamed-evaluation-v1",
+            "started_at": "2026-11-01T13:39:30.977498+00:00",
+            "finished_at": "2026-11-01T13:39:30.977498+00:00"
+          }
+        }
+      },
+      {
+        "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-9",
+        "tool": "estimate_plan",
+        "arguments": {
+          "option_id": "campus_memory_cards"
+        },
+        "result": {
+          "status": "success",
+          "code": "ok",
+          "message": "估算完成（可行性见 feasible，费用不累计）",
+          "data": {
+            "option_id": "campus_memory_cards",
+            "catalog_version": "campus-renamed-evaluation-v1",
+            "evaluated_at": "2026-11-01T13:39:34.335765+00:00",
+            "line_items": [
+              {
+                "item_id": "concept",
+                "label": "策划",
+                "quantity": 1,
+                "unit_cost": 3,
+                "duration_minutes": 20,
+                "depends_on": [],
+                "subtotal": 3
+              },
+              {
+                "item_id": "design",
+                "label": "图文制作",
+                "quantity": 1,
+                "unit_cost": 5,
+                "duration_minutes": 30,
+                "depends_on": [
+                  "concept"
+                ],
+                "subtotal": 5
+              },
+              {
+                "item_id": "publish",
+                "label": "发布",
+                "quantity": 1,
+                "unit_cost": 3,
+                "duration_minutes": 10,
+                "depends_on": [
+                  "design"
+                ],
+                "subtotal": 3
+              }
+            ],
+            "estimated_total_cost": 11,
+            "duration_minutes": 60,
+            "projected_finish_at": "2026-11-01T14:39:34.335765+00:00",
+            "budget_gap": 0,
+            "time_gap_seconds": 0,
+            "missing": [],
+            "checks": {
+              "budget_ok": true,
+              "time_ok": true,
+              "dependencies_ok": false
+            },
+            "feasible": true,
+            "save_ready": false,
+            "estimate_id": "estimate-fd50619d46fa",
+            "script_id": null,
+            "plan_version": null
+          },
+          "missing": [],
+          "issues": [],
+          "retryable": false,
+          "meta": {
+            "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-9",
+            "task_id": "fewshot-renamed-1839936c3c",
+            "catalog_version": "campus-renamed-evaluation-v1",
+            "started_at": "2026-11-01T13:39:34.335765+00:00",
+            "finished_at": "2026-11-01T13:39:34.335765+00:00"
+          }
+        }
+      },
+      {
+        "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-10",
+        "tool": "estimate_plan",
+        "arguments": {
+          "option_id": "campus_interview"
+        },
+        "result": {
+          "status": "success",
+          "code": "ok",
+          "message": "估算完成（可行性见 feasible，费用不累计）",
+          "data": {
+            "option_id": "campus_interview",
+            "catalog_version": "campus-renamed-evaluation-v1",
+            "evaluated_at": "2026-11-01T13:39:37.695137+00:00",
+            "line_items": [
+              {
+                "item_id": "concept",
+                "label": "策划",
+                "quantity": 1,
+                "unit_cost": 3,
+                "duration_minutes": 20,
+                "depends_on": [],
+                "subtotal": 3
+              },
+              {
+                "item_id": "shoot",
+                "label": "拍摄",
+                "quantity": 1,
+                "unit_cost": 10,
+                "duration_minutes": 60,
+                "depends_on": [
+                  "concept"
+                ],
+                "subtotal": 10
+              },
+              {
+                "item_id": "publish",
+                "label": "剪辑发布",
+                "quantity": 1,
+                "unit_cost": 6,
+                "duration_minutes": 40,
+                "depends_on": [
+                  "shoot"
+                ],
+                "subtotal": 6
+              }
+            ],
+            "estimated_total_cost": 19,
+            "duration_minutes": 120,
+            "projected_finish_at": "2026-11-01T15:39:37.695137+00:00",
+            "budget_gap": 5,
+            "time_gap_seconds": 0,
+            "missing": [],
+            "checks": {
+              "budget_ok": false,
+              "time_ok": true,
+              "dependencies_ok": false
+            },
+            "feasible": false,
+            "save_ready": false,
+            "estimate_id": "estimate-1deb5abe39cf",
+            "script_id": null,
+            "plan_version": null
+          },
+          "missing": [],
+          "issues": [
+            {
+              "code": "budget_gap",
+              "message": "5"
+            }
+          ],
+          "retryable": false,
+          "meta": {
+            "call_id": "3ea8a46a6050442ba864190673ea0b7d-call-10",
+            "task_id": "fewshot-renamed-1839936c3c",
+            "catalog_version": "campus-renamed-evaluation-v1",
+            "started_at": "2026-11-01T13:39:37.695137+00:00",
+            "finished_at": "2026-11-01T13:39:37.695137+00:00"
+          }
+        }
+      }
+    ],
+    "estimated_total_cost": 19,
+    "duration_minutes": 120,
+    "projected_finish_at": "2026-11-01T15:39:37.695137+00:00",
+    "saved_plan_ref": null,
+    "incomplete_reason": {
+      "code": "step_limit",
+      "message": "达到最大执行轮数，未保存方案",
+      "feasibility_diagnosis": null,
+      "overdue_seconds": 0
+    },
+    "gaps_by_option": [
+      {
+        "option_id": "campus_memory_cards",
+        "estimated_total_cost": 11,
+        "duration_minutes": 60,
+        "budget_gap": 0,
+        "time_gap_seconds": 0,
+        "missing": [],
+        "feasible": true
+      },
+      {
+        "option_id": "campus_interview",
+        "estimated_total_cost": 19,
+        "duration_minutes": 120,
+        "budget_gap": 5,
+        "time_gap_seconds": 0,
+        "missing": [],
+        "feasible": false
+      }
+    ],
+    "artifacts": {
+      "materials": {
+        "campus-photo-01": {
+          "material_id": "campus-photo-01",
+          "kind": "campus_photo",
+          "title": "校园毕业合影示意素材",
+          "content": "合成场景：毕业生在图书馆前合影。仅文字素材描述，非真实照片。",
+          "tags": [
+            "校园",
+            "毕业",
+            "毕业季"
+          ],
+          "synthetic": true
+        },
+        "graduate-message-01": {
+          "material_id": "graduate-message-01",
+          "kind": "graduate_message",
+          "title": "毕业寄语示例",
+          "content": "合成寄语：把校园的光带向下一站，愿我们各自闪耀。",
+          "tags": [
+            "校园",
+            "毕业",
+            "毕业季"
+          ],
+          "synthetic": true
+        }
+      },
+      "scripts": {},
+      "estimates": {
+        "estimate-e3a3f09a46eb": {
+          "option_id": "campus_interview",
+          "catalog_version": "campus-renamed-evaluation-v1",
+          "evaluated_at": "2026-11-01T13:39:11.240989+00:00",
+          "line_items": [
+            {
+              "item_id": "concept",
+              "label": "策划",
+              "quantity": 1,
+              "unit_cost": 3,
+              "duration_minutes": 20,
+              "depends_on": [],
+              "subtotal": 3
+            },
+            {
+              "item_id": "shoot",
+              "label": "拍摄",
+              "quantity": 1,
+              "unit_cost": 10,
+              "duration_minutes": 60,
+              "depends_on": [
+                "concept"
+              ],
+              "subtotal": 10
+            },
+            {
+              "item_id": "publish",
+              "label": "剪辑发布",
+              "quantity": 1,
+              "unit_cost": 6,
+              "duration_minutes": 40,
+              "depends_on": [
+                "shoot"
+              ],
+              "subtotal": 6
+            }
+          ],
+          "estimated_total_cost": 19,
+          "duration_minutes": 120,
+          "projected_finish_at": "2026-11-01T15:39:11.240989+00:00",
+          "budget_gap": 5,
+          "time_gap_seconds": 0,
+          "missing": [],
+          "checks": {
+            "budget_ok": false,
+            "time_ok": true,
+            "dependencies_ok": false
+          },
+          "feasible": false,
+          "save_ready": false,
+          "estimate_id": "estimate-e3a3f09a46eb",
+          "script_id": null,
+          "plan_version": null
+        },
+        "estimate-236360fddfcd": {
+          "option_id": "campus_interview",
+          "catalog_version": "campus-renamed-evaluation-v1",
+          "evaluated_at": "2026-11-01T13:39:14.412455+00:00",
+          "line_items": [
+            {
+              "item_id": "concept",
+              "label": "策划",
+              "quantity": 1,
+              "unit_cost": 3,
+              "duration_minutes": 20,
+              "depends_on": [],
+              "subtotal": 3
+            },
+            {
+              "item_id": "shoot",
+              "label": "拍摄",
+              "quantity": 1,
+              "unit_cost": 10,
+              "duration_minutes": 60,
+              "depends_on": [
+                "concept"
+              ],
+              "subtotal": 10
+            },
+            {
+              "item_id": "publish",
+              "label": "剪辑发布",
+              "quantity": 1,
+              "unit_cost": 6,
+              "duration_minutes": 40,
+              "depends_on": [
+                "shoot"
+              ],
+              "subtotal": 6
+            }
+          ],
+          "estimated_total_cost": 19,
+          "duration_minutes": 120,
+          "projected_finish_at": "2026-11-01T15:39:14.412455+00:00",
+          "budget_gap": 5,
+          "time_gap_seconds": 0,
+          "missing": [],
+          "checks": {
+            "budget_ok": false,
+            "time_ok": true,
+            "dependencies_ok": false
+          },
+          "feasible": false,
+          "save_ready": false,
+          "estimate_id": "estimate-236360fddfcd",
+          "script_id": null,
+          "plan_version": null
+        },
+        "estimate-881235d34783": {
+          "option_id": "campus_interview",
+          "catalog_version": "campus-renamed-evaluation-v1",
+          "evaluated_at": "2026-11-01T13:39:17.659550+00:00",
+          "line_items": [
+            {
+              "item_id": "concept",
+              "label": "策划",
+              "quantity": 1,
+              "unit_cost": 3,
+              "duration_minutes": 20,
+              "depends_on": [],
+              "subtotal": 3
+            },
+            {
+              "item_id": "shoot",
+              "label": "拍摄",
+              "quantity": 1,
+              "unit_cost": 10,
+              "duration_minutes": 60,
+              "depends_on": [
+                "concept"
+              ],
+              "subtotal": 10
+            },
+            {
+              "item_id": "publish",
+              "label": "剪辑发布",
+              "quantity": 1,
+              "unit_cost": 6,
+              "duration_minutes": 40,
+              "depends_on": [
+                "shoot"
+              ],
+              "subtotal": 6
+            }
+          ],
+          "estimated_total_cost": 19,
+          "duration_minutes": 120,
+          "projected_finish_at": "2026-11-01T15:39:17.659550+00:00",
+          "budget_gap": 5,
+          "time_gap_seconds": 0,
+          "missing": [],
+          "checks": {
+            "budget_ok": false,
+            "time_ok": true,
+            "dependencies_ok": false
+          },
+          "feasible": false,
+          "save_ready": false,
+          "estimate_id": "estimate-881235d34783",
+          "script_id": null,
+          "plan_version": null
+        },
+        "estimate-600885038de4": {
+          "option_id": "campus_memory_cards",
+          "catalog_version": "campus-renamed-evaluation-v1",
+          "evaluated_at": "2026-11-01T13:39:20.880583+00:00",
+          "line_items": [
+            {
+              "item_id": "concept",
+              "label": "策划",
+              "quantity": 1,
+              "unit_cost": 3,
+              "duration_minutes": 20,
+              "depends_on": [],
+              "subtotal": 3
+            },
+            {
+              "item_id": "design",
+              "label": "图文制作",
+              "quantity": 1,
+              "unit_cost": 5,
+              "duration_minutes": 30,
+              "depends_on": [
+                "concept"
+              ],
+              "subtotal": 5
+            },
+            {
+              "item_id": "publish",
+              "label": "发布",
+              "quantity": 1,
+              "unit_cost": 3,
+              "duration_minutes": 10,
+              "depends_on": [
+                "design"
+              ],
+              "subtotal": 3
+            }
+          ],
+          "estimated_total_cost": 11,
+          "duration_minutes": 60,
+          "projected_finish_at": "2026-11-01T14:39:20.880583+00:00",
+          "budget_gap": 0,
+          "time_gap_seconds": 0,
+          "missing": [],
+          "checks": {
+            "budget_ok": true,
+            "time_ok": true,
+            "dependencies_ok": false
+          },
+          "feasible": true,
+          "save_ready": false,
+          "estimate_id": "estimate-600885038de4",
+          "script_id": null,
+          "plan_version": null
+        },
+        "estimate-407d8a9cb395": {
+          "option_id": "campus_interview",
+          "catalog_version": "campus-renamed-evaluation-v1",
+          "evaluated_at": "2026-11-01T13:39:24.330352+00:00",
+          "line_items": [
+            {
+              "item_id": "concept",
+              "label": "策划",
+              "quantity": 1,
+              "unit_cost": 3,
+              "duration_minutes": 20,
+              "depends_on": [],
+              "subtotal": 3
+            },
+            {
+              "item_id": "shoot",
+              "label": "拍摄",
+              "quantity": 1,
+              "unit_cost": 10,
+              "duration_minutes": 60,
+              "depends_on": [
+                "concept"
+              ],
+              "subtotal": 10
+            },
+            {
+              "item_id": "publish",
+              "label": "剪辑发布",
+              "quantity": 1,
+              "unit_cost": 6,
+              "duration_minutes": 40,
+              "depends_on": [
+                "shoot"
+              ],
+              "subtotal": 6
+            }
+          ],
+          "estimated_total_cost": 19,
+          "duration_minutes": 120,
+          "projected_finish_at": "2026-11-01T15:39:24.330352+00:00",
+          "budget_gap": 5,
+          "time_gap_seconds": 0,
+          "missing": [],
+          "checks": {
+            "budget_ok": false,
+            "time_ok": true,
+            "dependencies_ok": false
+          },
+          "feasible": false,
+          "save_ready": false,
+          "estimate_id": "estimate-407d8a9cb395",
+          "script_id": null,
+          "plan_version": null
+        },
+        "estimate-b7608efd726a": {
+          "option_id": "campus_memory_cards",
+          "catalog_version": "campus-renamed-evaluation-v1",
+          "evaluated_at": "2026-11-01T13:39:27.658833+00:00",
+          "line_items": [
+            {
+              "item_id": "concept",
+              "label": "策划",
+              "quantity": 1,
+              "unit_cost": 3,
+              "duration_minutes": 20,
+              "depends_on": [],
+              "subtotal": 3
+            },
+            {
+              "item_id": "design",
+              "label": "图文制作",
+              "quantity": 1,
+              "unit_cost": 5,
+              "duration_minutes": 30,
+              "depends_on": [
+                "concept"
+              ],
+              "subtotal": 5
+            },
+            {
+              "item_id": "publish",
+              "label": "发布",
+              "quantity": 1,
+              "unit_cost": 3,
+              "duration_minutes": 10,
+              "depends_on": [
+                "design"
+              ],
+              "subtotal": 3
+            }
+          ],
+          "estimated_total_cost": 11,
+          "duration_minutes": 60,
+          "projected_finish_at": "2026-11-01T14:39:27.658833+00:00",
+          "budget_gap": 0,
+          "time_gap_seconds": 0,
+          "missing": [],
+          "checks": {
+            "budget_ok": true,
+            "time_ok": true,
+            "dependencies_ok": false
+          },
+          "feasible": true,
+          "save_ready": false,
+          "estimate_id": "estimate-b7608efd726a",
+          "script_id": null,
+          "plan_version": null
+        },
+        "estimate-d6e21697e433": {
+          "option_id": "campus_interview",
+          "catalog_version": "campus-renamed-evaluation-v1",
+          "evaluated_at": "2026-11-01T13:39:30.977498+00:00",
+          "line_items": [
+            {
+              "item_id": "concept",
+              "label": "策划",
+              "quantity": 1,
+              "unit_cost": 3,
+              "duration_minutes": 20,
+              "depends_on": [],
+              "subtotal": 3
+            },
+            {
+              "item_id": "shoot",
+              "label": "拍摄",
+              "quantity": 1,
+              "unit_cost": 10,
+              "duration_minutes": 60,
+              "depends_on": [
+                "concept"
+              ],
+              "subtotal": 10
+            },
+            {
+              "item_id": "publish",
+              "label": "剪辑发布",
+              "quantity": 1,
+              "unit_cost": 6,
+              "duration_minutes": 40,
+              "depends_on": [
+                "shoot"
+              ],
+              "subtotal": 6
+            }
+          ],
+          "estimated_total_cost": 19,
+          "duration_minutes": 120,
+          "projected_finish_at": "2026-11-01T15:39:30.977498+00:00",
+          "budget_gap": 5,
+          "time_gap_seconds": 0,
+          "missing": [],
+          "checks": {
+            "budget_ok": false,
+            "time_ok": true,
+            "dependencies_ok": false
+          },
+          "feasible": false,
+          "save_ready": false,
+          "estimate_id": "estimate-d6e21697e433",
+          "script_id": null,
+          "plan_version": null
+        },
+        "estimate-fd50619d46fa": {
+          "option_id": "campus_memory_cards",
+          "catalog_version": "campus-renamed-evaluation-v1",
+          "evaluated_at": "2026-11-01T13:39:34.335765+00:00",
+          "line_items": [
+            {
+              "item_id": "concept",
+              "label": "策划",
+              "quantity": 1,
+              "unit_cost": 3,
+              "duration_minutes": 20,
+              "depends_on": [],
+              "subtotal": 3
+            },
+            {
+              "item_id": "design",
+              "label": "图文制作",
+              "quantity": 1,
+              "unit_cost": 5,
+              "duration_minutes": 30,
+              "depends_on": [
+                "concept"
+              ],
+              "subtotal": 5
+            },
+            {
+              "item_id": "publish",
+              "label": "发布",
+              "quantity": 1,
+              "unit_cost": 3,
+              "duration_minutes": 10,
+              "depends_on": [
+                "design"
+              ],
+              "subtotal": 3
+            }
+          ],
+          "estimated_total_cost": 11,
+          "duration_minutes": 60,
+          "projected_finish_at": "2026-11-01T14:39:34.335765+00:00",
+          "budget_gap": 0,
+          "time_gap_seconds": 0,
+          "missing": [],
+          "checks": {
+            "budget_ok": true,
+            "time_ok": true,
+            "dependencies_ok": false
+          },
+          "feasible": true,
+          "save_ready": false,
+          "estimate_id": "estimate-fd50619d46fa",
+          "script_id": null,
+          "plan_version": null
+        },
+        "estimate-1deb5abe39cf": {
+          "option_id": "campus_interview",
+          "catalog_version": "campus-renamed-evaluation-v1",
+          "evaluated_at": "2026-11-01T13:39:37.695137+00:00",
+          "line_items": [
+            {
+              "item_id": "concept",
+              "label": "策划",
+              "quantity": 1,
+              "unit_cost": 3,
+              "duration_minutes": 20,
+              "depends_on": [],
+              "subtotal": 3
+            },
+            {
+              "item_id": "shoot",
+              "label": "拍摄",
+              "quantity": 1,
+              "unit_cost": 10,
+              "duration_minutes": 60,
+              "depends_on": [
+                "concept"
+              ],
+              "subtotal": 10
+            },
+            {
+              "item_id": "publish",
+              "label": "剪辑发布",
+              "quantity": 1,
+              "unit_cost": 6,
+              "duration_minutes": 40,
+              "depends_on": [
+                "shoot"
+              ],
+              "subtotal": 6
+            }
+          ],
+          "estimated_total_cost": 19,
+          "duration_minutes": 120,
+          "projected_finish_at": "2026-11-01T15:39:37.695137+00:00",
+          "budget_gap": 5,
+          "time_gap_seconds": 0,
+          "missing": [],
+          "checks": {
+            "budget_ok": false,
+            "time_ok": true,
+            "dependencies_ok": false
+          },
+          "feasible": false,
+          "save_ready": false,
+          "estimate_id": "estimate-1deb5abe39cf",
+          "script_id": null,
+          "plan_version": null
+        }
+      }
+    }
+  },
+  "run_id": "3ea8a46a6050442ba864190673ea0b7d",
+  "trace_path": "<project>\\examples\\live\\few-shot-batch\\renamed\\run\\trace.jsonl"
+}

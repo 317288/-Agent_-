@@ -1,0 +1,945 @@
+{
+  "task_id": "review-fault-ce7798cdc8e3",
+  "status": "completed",
+  "replayed": false,
+  "mode": "live",
+  "missing_fields": [],
+  "error": null,
+  "result": {
+    "plan": {
+      "saved_plan_id": "plan-ff9b874f7453",
+      "task": {
+        "task_id": "review-fault-ce7798cdc8e3",
+        "theme": "校园毕业季",
+        "budget": 20,
+        "deadline": "2026-11-03T08:58:37.948537+00:00",
+        "instructions": "完成并保存一份校园毕业季活动方案；复用已经成功取得的素材和产物。"
+      },
+      "plan_version": 1,
+      "option_id": "graduation_slides",
+      "script": {
+        "script_id": "script-7e34a5dc95f8",
+        "plan_version": 1,
+        "option_id": "graduation_slides",
+        "material_ids": [
+          "campus-photo-01",
+          "graduate-message-01"
+        ],
+        "sections": [
+          {
+            "name": "开场",
+            "text": "校园毕业季：毕业季图文活动，用校园记忆开启毕业故事。",
+            "material_ids": [
+              "campus-photo-01",
+              "graduate-message-01"
+            ]
+          },
+          {
+            "name": "主体",
+            "text": "合成场景：毕业生在图书馆前合影。仅文字素材描述，非真实照片。；合成寄语：把校园的光带向下一站，愿我们各自闪耀。",
+            "material_ids": [
+              "campus-photo-01",
+              "graduate-message-01"
+            ]
+          },
+          {
+            "name": "行动号召",
+            "text": "邀请同学分享毕业寄语，投稿前确认肖像及内容授权；本项目仅输出计划，不实际发布。",
+            "material_ids": [
+              "campus-photo-01",
+              "graduate-message-01"
+            ]
+          }
+        ],
+        "required_sections": [
+          "开场",
+          "主体",
+          "行动号召"
+        ],
+        "missing_sections": [],
+        "generation_mode": "template"
+      },
+      "estimate": {
+        "option_id": "graduation_slides",
+        "catalog_version": "campus-v1",
+        "evaluated_at": "2026-11-02T08:58:52.743175+00:00",
+        "line_items": [
+          {
+            "item_id": "concept",
+            "label": "策划",
+            "quantity": 1,
+            "unit_cost": 2,
+            "duration_minutes": 20,
+            "depends_on": [],
+            "subtotal": 2
+          },
+          {
+            "item_id": "design",
+            "label": "图文制作",
+            "quantity": 1,
+            "unit_cost": 4,
+            "duration_minutes": 30,
+            "depends_on": [
+              "concept"
+            ],
+            "subtotal": 4
+          },
+          {
+            "item_id": "publish",
+            "label": "发布",
+            "quantity": 1,
+            "unit_cost": 2,
+            "duration_minutes": 10,
+            "depends_on": [
+              "design"
+            ],
+            "subtotal": 2
+          }
+        ],
+        "estimated_total_cost": 8,
+        "duration_minutes": 60,
+        "projected_finish_at": "2026-11-02T09:58:52.743175+00:00",
+        "budget_gap": 0,
+        "time_gap_seconds": 0,
+        "missing": [],
+        "checks": {
+          "budget_ok": true,
+          "time_ok": true,
+          "dependencies_ok": true
+        },
+        "feasible": true,
+        "save_ready": true,
+        "script_id": "script-7e34a5dc95f8",
+        "plan_version": 1,
+        "source_estimate_id": "estimate-f6aa6d276704"
+      },
+      "activity_steps": [
+        {
+          "item_id": "concept",
+          "label": "策划",
+          "quantity": 1,
+          "unit_cost": 2,
+          "duration_minutes": 20,
+          "depends_on": [],
+          "subtotal": 2,
+          "status": "planned"
+        },
+        {
+          "item_id": "design",
+          "label": "图文制作",
+          "quantity": 1,
+          "unit_cost": 4,
+          "duration_minutes": 30,
+          "depends_on": [
+            "concept"
+          ],
+          "subtotal": 4,
+          "status": "planned"
+        },
+        {
+          "item_id": "publish",
+          "label": "发布",
+          "quantity": 1,
+          "unit_cost": 2,
+          "duration_minutes": 10,
+          "depends_on": [
+            "design"
+          ],
+          "subtotal": 2,
+          "status": "planned"
+        }
+      ],
+      "saved_at": "2026-11-02T08:58:52.743175+00:00"
+    },
+    "steps": [
+      {
+        "step_id": "85035d9566be43b584506640c353561c-call-1",
+        "call_id": "85035d9566be43b584506640c353561c-call-1",
+        "tool": "search_materials",
+        "arguments": {
+          "query": "校园毕业季",
+          "required_kinds": [
+            "campus_photo",
+            "graduate_message"
+          ]
+        },
+        "status": "succeeded",
+        "depends_on": [],
+        "plan_version": 0,
+        "result_ref": "85035d9566be43b584506640c353561c-call-1",
+        "active_in_current_plan": true
+      },
+      {
+        "step_id": "85035d9566be43b584506640c353561c-call-2",
+        "call_id": "85035d9566be43b584506640c353561c-call-2",
+        "tool": "estimate_plan",
+        "arguments": {
+          "option_id": "graduation_video"
+        },
+        "status": "succeeded",
+        "depends_on": [],
+        "plan_version": 0,
+        "result_ref": "85035d9566be43b584506640c353561c-call-2",
+        "active_in_current_plan": false
+      },
+      {
+        "step_id": "85035d9566be43b584506640c353561c-call-3",
+        "call_id": "85035d9566be43b584506640c353561c-call-3",
+        "tool": "estimate_plan",
+        "arguments": {
+          "option_id": "graduation_slides"
+        },
+        "status": "succeeded",
+        "depends_on": [],
+        "plan_version": 0,
+        "result_ref": "85035d9566be43b584506640c353561c-call-3",
+        "active_in_current_plan": false
+      },
+      {
+        "step_id": "85035d9566be43b584506640c353561c-call-4",
+        "call_id": "85035d9566be43b584506640c353561c-call-4",
+        "tool": "generate_script",
+        "arguments": {
+          "option_id": "graduation_slides",
+          "material_ids": [
+            "campus-photo-01",
+            "graduate-message-01"
+          ]
+        },
+        "status": "failed",
+        "depends_on": [
+          "85035d9566be43b584506640c353561c-call-1"
+        ],
+        "plan_version": 0,
+        "result_ref": "85035d9566be43b584506640c353561c-call-4",
+        "active_in_current_plan": false
+      },
+      {
+        "step_id": "85035d9566be43b584506640c353561c-call-5",
+        "call_id": "85035d9566be43b584506640c353561c-call-5",
+        "tool": "generate_script",
+        "arguments": {
+          "option_id": "graduation_slides",
+          "material_ids": [
+            "campus-photo-01",
+            "graduate-message-01"
+          ]
+        },
+        "status": "succeeded",
+        "depends_on": [
+          "85035d9566be43b584506640c353561c-call-1"
+        ],
+        "plan_version": 1,
+        "result_ref": "85035d9566be43b584506640c353561c-call-5",
+        "active_in_current_plan": true
+      },
+      {
+        "step_id": "85035d9566be43b584506640c353561c-call-6",
+        "call_id": "85035d9566be43b584506640c353561c-call-6",
+        "tool": "estimate_plan",
+        "arguments": {
+          "option_id": "graduation_slides",
+          "script_id": "script-7e34a5dc95f8"
+        },
+        "status": "succeeded",
+        "depends_on": [
+          "85035d9566be43b584506640c353561c-call-5"
+        ],
+        "plan_version": 1,
+        "result_ref": "85035d9566be43b584506640c353561c-call-6",
+        "active_in_current_plan": true
+      },
+      {
+        "step_id": "85035d9566be43b584506640c353561c-call-7",
+        "call_id": "85035d9566be43b584506640c353561c-call-7",
+        "tool": "save_plan",
+        "arguments": {
+          "script_id": "script-7e34a5dc95f8",
+          "estimate_id": "estimate-f6aa6d276704",
+          "plan_version": 1
+        },
+        "status": "succeeded",
+        "depends_on": [
+          "85035d9566be43b584506640c353561c-call-5",
+          "85035d9566be43b584506640c353561c-call-6"
+        ],
+        "plan_version": 1,
+        "result_ref": "85035d9566be43b584506640c353561c-call-7",
+        "active_in_current_plan": true
+      }
+    ],
+    "tool_results": [
+      {
+        "call_id": "85035d9566be43b584506640c353561c-call-1",
+        "tool": "search_materials",
+        "arguments": {
+          "query": "校园毕业季",
+          "required_kinds": [
+            "campus_photo",
+            "graduate_message"
+          ]
+        },
+        "result": {
+          "status": "success",
+          "code": "ok",
+          "message": "素材检索完成",
+          "data": {
+            "search_id": "search-b49a288218a1",
+            "materials": [
+              {
+                "material_id": "campus-photo-01",
+                "kind": "campus_photo",
+                "title": "校园毕业合影示意素材",
+                "content": "合成场景：毕业生在图书馆前合影。仅文字素材描述，非真实照片。",
+                "tags": [
+                  "校园",
+                  "毕业",
+                  "毕业季"
+                ],
+                "synthetic": true
+              },
+              {
+                "material_id": "graduate-message-01",
+                "kind": "graduate_message",
+                "title": "毕业寄语示例",
+                "content": "合成寄语：把校园的光带向下一站，愿我们各自闪耀。",
+                "tags": [
+                  "校园",
+                  "毕业",
+                  "毕业季"
+                ],
+                "synthetic": true
+              }
+            ],
+            "covered_kinds": [
+              "campus_photo",
+              "graduate_message"
+            ],
+            "missing_kinds": []
+          },
+          "missing": [],
+          "issues": [],
+          "retryable": false,
+          "meta": {
+            "call_id": "85035d9566be43b584506640c353561c-call-1",
+            "task_id": "review-fault-ce7798cdc8e3",
+            "catalog_version": "campus-v1",
+            "started_at": "2026-11-02T08:58:38.185542+00:00",
+            "finished_at": "2026-11-02T08:58:38.185542+00:00"
+          }
+        }
+      },
+      {
+        "call_id": "85035d9566be43b584506640c353561c-call-2",
+        "tool": "estimate_plan",
+        "arguments": {
+          "option_id": "graduation_video"
+        },
+        "result": {
+          "status": "success",
+          "code": "ok",
+          "message": "估算完成（可行性见 feasible，费用不累计）",
+          "data": {
+            "option_id": "graduation_video",
+            "catalog_version": "campus-v1",
+            "evaluated_at": "2026-11-02T08:58:41.551931+00:00",
+            "line_items": [
+              {
+                "item_id": "concept",
+                "label": "策划",
+                "quantity": 1,
+                "unit_cost": 2,
+                "duration_minutes": 20,
+                "depends_on": [],
+                "subtotal": 2
+              },
+              {
+                "item_id": "shoot",
+                "label": "拍摄",
+                "quantity": 1,
+                "unit_cost": 6,
+                "duration_minutes": 60,
+                "depends_on": [
+                  "concept"
+                ],
+                "subtotal": 6
+              },
+              {
+                "item_id": "publish",
+                "label": "剪辑发布",
+                "quantity": 1,
+                "unit_cost": 4,
+                "duration_minutes": 40,
+                "depends_on": [
+                  "shoot"
+                ],
+                "subtotal": 4
+              }
+            ],
+            "estimated_total_cost": 12,
+            "duration_minutes": 120,
+            "projected_finish_at": "2026-11-02T10:58:41.551931+00:00",
+            "budget_gap": 0,
+            "time_gap_seconds": 0,
+            "missing": [],
+            "checks": {
+              "budget_ok": true,
+              "time_ok": true,
+              "dependencies_ok": false
+            },
+            "feasible": true,
+            "save_ready": false,
+            "estimate_id": "estimate-24a53c8f465b",
+            "script_id": null,
+            "plan_version": null
+          },
+          "missing": [],
+          "issues": [],
+          "retryable": false,
+          "meta": {
+            "call_id": "85035d9566be43b584506640c353561c-call-2",
+            "task_id": "review-fault-ce7798cdc8e3",
+            "catalog_version": "campus-v1",
+            "started_at": "2026-11-02T08:58:41.551602+00:00",
+            "finished_at": "2026-11-02T08:58:41.551931+00:00"
+          }
+        }
+      },
+      {
+        "call_id": "85035d9566be43b584506640c353561c-call-3",
+        "tool": "estimate_plan",
+        "arguments": {
+          "option_id": "graduation_slides"
+        },
+        "result": {
+          "status": "success",
+          "code": "ok",
+          "message": "估算完成（可行性见 feasible，费用不累计）",
+          "data": {
+            "option_id": "graduation_slides",
+            "catalog_version": "campus-v1",
+            "evaluated_at": "2026-11-02T08:58:44.877012+00:00",
+            "line_items": [
+              {
+                "item_id": "concept",
+                "label": "策划",
+                "quantity": 1,
+                "unit_cost": 2,
+                "duration_minutes": 20,
+                "depends_on": [],
+                "subtotal": 2
+              },
+              {
+                "item_id": "design",
+                "label": "图文制作",
+                "quantity": 1,
+                "unit_cost": 4,
+                "duration_minutes": 30,
+                "depends_on": [
+                  "concept"
+                ],
+                "subtotal": 4
+              },
+              {
+                "item_id": "publish",
+                "label": "发布",
+                "quantity": 1,
+                "unit_cost": 2,
+                "duration_minutes": 10,
+                "depends_on": [
+                  "design"
+                ],
+                "subtotal": 2
+              }
+            ],
+            "estimated_total_cost": 8,
+            "duration_minutes": 60,
+            "projected_finish_at": "2026-11-02T09:58:44.877012+00:00",
+            "budget_gap": 0,
+            "time_gap_seconds": 0,
+            "missing": [],
+            "checks": {
+              "budget_ok": true,
+              "time_ok": true,
+              "dependencies_ok": false
+            },
+            "feasible": true,
+            "save_ready": false,
+            "estimate_id": "estimate-83c15022cd4e",
+            "script_id": null,
+            "plan_version": null
+          },
+          "missing": [],
+          "issues": [],
+          "retryable": false,
+          "meta": {
+            "call_id": "85035d9566be43b584506640c353561c-call-3",
+            "task_id": "review-fault-ce7798cdc8e3",
+            "catalog_version": "campus-v1",
+            "started_at": "2026-11-02T08:58:44.877012+00:00",
+            "finished_at": "2026-11-02T08:58:44.877012+00:00"
+          }
+        }
+      },
+      {
+        "call_id": "85035d9566be43b584506640c353561c-call-4",
+        "tool": "generate_script",
+        "arguments": {
+          "option_id": "graduation_slides",
+          "material_ids": [
+            "campus-photo-01",
+            "graduate-message-01"
+          ]
+        },
+        "result": {
+          "status": "error",
+          "code": "injected_failure",
+          "message": "测试注入：本任务首次相关调用发生临时错误；此前成功结果保留。由模型决定重试、改选或停止。",
+          "data": null,
+          "missing": [],
+          "issues": [
+            {
+              "code": "temporary_failure",
+              "message": "仅当前任务首次相关调用生效；无底层自动重试",
+              "task_id": "review-fault-ce7798cdc8e3",
+              "tool": "generate_script",
+              "injected": true
+            }
+          ],
+          "retryable": true,
+          "meta": {
+            "call_id": "85035d9566be43b584506640c353561c-call-4",
+            "task_id": "review-fault-ce7798cdc8e3",
+            "catalog_version": "campus-v1",
+            "started_at": "2026-11-02T08:58:48.760345+00:00",
+            "finished_at": "2026-11-02T08:58:48.760345+00:00"
+          }
+        }
+      },
+      {
+        "call_id": "85035d9566be43b584506640c353561c-call-5",
+        "tool": "generate_script",
+        "arguments": {
+          "option_id": "graduation_slides",
+          "material_ids": [
+            "campus-photo-01",
+            "graduate-message-01"
+          ]
+        },
+        "result": {
+          "status": "success",
+          "code": "ok",
+          "message": "模板脚本生成完成",
+          "data": {
+            "script_id": "script-7e34a5dc95f8",
+            "plan_version": 1,
+            "option_id": "graduation_slides",
+            "material_ids": [
+              "campus-photo-01",
+              "graduate-message-01"
+            ],
+            "sections": [
+              {
+                "name": "开场",
+                "text": "校园毕业季：毕业季图文活动，用校园记忆开启毕业故事。",
+                "material_ids": [
+                  "campus-photo-01",
+                  "graduate-message-01"
+                ]
+              },
+              {
+                "name": "主体",
+                "text": "合成场景：毕业生在图书馆前合影。仅文字素材描述，非真实照片。；合成寄语：把校园的光带向下一站，愿我们各自闪耀。",
+                "material_ids": [
+                  "campus-photo-01",
+                  "graduate-message-01"
+                ]
+              },
+              {
+                "name": "行动号召",
+                "text": "邀请同学分享毕业寄语，投稿前确认肖像及内容授权；本项目仅输出计划，不实际发布。",
+                "material_ids": [
+                  "campus-photo-01",
+                  "graduate-message-01"
+                ]
+              }
+            ],
+            "required_sections": [
+              "开场",
+              "主体",
+              "行动号召"
+            ],
+            "missing_sections": [],
+            "generation_mode": "template"
+          },
+          "missing": [],
+          "issues": [],
+          "retryable": false,
+          "meta": {
+            "call_id": "85035d9566be43b584506640c353561c-call-5",
+            "task_id": "review-fault-ce7798cdc8e3",
+            "catalog_version": "campus-v1",
+            "started_at": "2026-11-02T08:58:52.606069+00:00",
+            "finished_at": "2026-11-02T08:58:52.610469+00:00"
+          }
+        }
+      },
+      {
+        "call_id": "85035d9566be43b584506640c353561c-call-6",
+        "tool": "estimate_plan",
+        "arguments": {
+          "option_id": "graduation_slides",
+          "script_id": "script-7e34a5dc95f8"
+        },
+        "result": {
+          "status": "success",
+          "code": "ok",
+          "message": "估算完成（可行性见 feasible，费用不累计）",
+          "data": {
+            "option_id": "graduation_slides",
+            "catalog_version": "campus-v1",
+            "evaluated_at": "2026-11-02T08:58:52.673238+00:00",
+            "line_items": [
+              {
+                "item_id": "concept",
+                "label": "策划",
+                "quantity": 1,
+                "unit_cost": 2,
+                "duration_minutes": 20,
+                "depends_on": [],
+                "subtotal": 2
+              },
+              {
+                "item_id": "design",
+                "label": "图文制作",
+                "quantity": 1,
+                "unit_cost": 4,
+                "duration_minutes": 30,
+                "depends_on": [
+                  "concept"
+                ],
+                "subtotal": 4
+              },
+              {
+                "item_id": "publish",
+                "label": "发布",
+                "quantity": 1,
+                "unit_cost": 2,
+                "duration_minutes": 10,
+                "depends_on": [
+                  "design"
+                ],
+                "subtotal": 2
+              }
+            ],
+            "estimated_total_cost": 8,
+            "duration_minutes": 60,
+            "projected_finish_at": "2026-11-02T09:58:52.673238+00:00",
+            "budget_gap": 0,
+            "time_gap_seconds": 0,
+            "missing": [],
+            "checks": {
+              "budget_ok": true,
+              "time_ok": true,
+              "dependencies_ok": true
+            },
+            "feasible": true,
+            "save_ready": true,
+            "estimate_id": "estimate-f6aa6d276704",
+            "script_id": "script-7e34a5dc95f8",
+            "plan_version": 1
+          },
+          "missing": [],
+          "issues": [],
+          "retryable": false,
+          "meta": {
+            "call_id": "85035d9566be43b584506640c353561c-call-6",
+            "task_id": "review-fault-ce7798cdc8e3",
+            "catalog_version": "campus-v1",
+            "started_at": "2026-11-02T08:58:52.673238+00:00",
+            "finished_at": "2026-11-02T08:58:52.673238+00:00"
+          }
+        }
+      },
+      {
+        "call_id": "85035d9566be43b584506640c353561c-call-7",
+        "tool": "save_plan",
+        "arguments": {
+          "script_id": "script-7e34a5dc95f8",
+          "estimate_id": "estimate-f6aa6d276704",
+          "plan_version": 1
+        },
+        "result": {
+          "status": "success",
+          "code": "ok",
+          "message": "执行成功",
+          "data": {
+            "saved_plan_id": "plan-ff9b874f7453",
+            "plan_version": 1,
+            "saved_plan_ref": "sqlite:<project>/runtime/review-fault-ce7798cdc8e3.sqlite3#plan/plan-ff9b874f7453",
+            "estimated_total_cost": 8,
+            "duration_minutes": 60,
+            "projected_finish_at": "2026-11-02T09:58:52.743175+00:00",
+            "saved_at": "2026-11-02T08:58:52.743175+00:00",
+            "already_saved": false
+          },
+          "missing": [],
+          "issues": [],
+          "retryable": false,
+          "meta": {
+            "call_id": "85035d9566be43b584506640c353561c-call-7",
+            "task_id": "review-fault-ce7798cdc8e3",
+            "catalog_version": "campus-v1",
+            "started_at": "2026-11-02T08:58:52.743175+00:00",
+            "finished_at": "2026-11-02T08:58:52.743175+00:00"
+          }
+        }
+      }
+    ],
+    "estimated_total_cost": 8,
+    "duration_minutes": 60,
+    "projected_finish_at": "2026-11-02T09:58:52.743175+00:00",
+    "saved_plan_ref": "sqlite:<project>/runtime/review-fault-ce7798cdc8e3.sqlite3#plan/plan-ff9b874f7453",
+    "incomplete_reason": null,
+    "gaps_by_option": [],
+    "artifacts": {
+      "materials": {
+        "campus-photo-01": {
+          "material_id": "campus-photo-01",
+          "kind": "campus_photo",
+          "title": "校园毕业合影示意素材",
+          "content": "合成场景：毕业生在图书馆前合影。仅文字素材描述，非真实照片。",
+          "tags": [
+            "校园",
+            "毕业",
+            "毕业季"
+          ],
+          "synthetic": true
+        },
+        "graduate-message-01": {
+          "material_id": "graduate-message-01",
+          "kind": "graduate_message",
+          "title": "毕业寄语示例",
+          "content": "合成寄语：把校园的光带向下一站，愿我们各自闪耀。",
+          "tags": [
+            "校园",
+            "毕业",
+            "毕业季"
+          ],
+          "synthetic": true
+        }
+      },
+      "scripts": {
+        "script-7e34a5dc95f8": {
+          "script_id": "script-7e34a5dc95f8",
+          "plan_version": 1,
+          "option_id": "graduation_slides",
+          "material_ids": [
+            "campus-photo-01",
+            "graduate-message-01"
+          ],
+          "sections": [
+            {
+              "name": "开场",
+              "text": "校园毕业季：毕业季图文活动，用校园记忆开启毕业故事。",
+              "material_ids": [
+                "campus-photo-01",
+                "graduate-message-01"
+              ]
+            },
+            {
+              "name": "主体",
+              "text": "合成场景：毕业生在图书馆前合影。仅文字素材描述，非真实照片。；合成寄语：把校园的光带向下一站，愿我们各自闪耀。",
+              "material_ids": [
+                "campus-photo-01",
+                "graduate-message-01"
+              ]
+            },
+            {
+              "name": "行动号召",
+              "text": "邀请同学分享毕业寄语，投稿前确认肖像及内容授权；本项目仅输出计划，不实际发布。",
+              "material_ids": [
+                "campus-photo-01",
+                "graduate-message-01"
+              ]
+            }
+          ],
+          "required_sections": [
+            "开场",
+            "主体",
+            "行动号召"
+          ],
+          "missing_sections": [],
+          "generation_mode": "template"
+        }
+      },
+      "estimates": {
+        "estimate-24a53c8f465b": {
+          "option_id": "graduation_video",
+          "catalog_version": "campus-v1",
+          "evaluated_at": "2026-11-02T08:58:41.551931+00:00",
+          "line_items": [
+            {
+              "item_id": "concept",
+              "label": "策划",
+              "quantity": 1,
+              "unit_cost": 2,
+              "duration_minutes": 20,
+              "depends_on": [],
+              "subtotal": 2
+            },
+            {
+              "item_id": "shoot",
+              "label": "拍摄",
+              "quantity": 1,
+              "unit_cost": 6,
+              "duration_minutes": 60,
+              "depends_on": [
+                "concept"
+              ],
+              "subtotal": 6
+            },
+            {
+              "item_id": "publish",
+              "label": "剪辑发布",
+              "quantity": 1,
+              "unit_cost": 4,
+              "duration_minutes": 40,
+              "depends_on": [
+                "shoot"
+              ],
+              "subtotal": 4
+            }
+          ],
+          "estimated_total_cost": 12,
+          "duration_minutes": 120,
+          "projected_finish_at": "2026-11-02T10:58:41.551931+00:00",
+          "budget_gap": 0,
+          "time_gap_seconds": 0,
+          "missing": [],
+          "checks": {
+            "budget_ok": true,
+            "time_ok": true,
+            "dependencies_ok": false
+          },
+          "feasible": true,
+          "save_ready": false,
+          "estimate_id": "estimate-24a53c8f465b",
+          "script_id": null,
+          "plan_version": null
+        },
+        "estimate-83c15022cd4e": {
+          "option_id": "graduation_slides",
+          "catalog_version": "campus-v1",
+          "evaluated_at": "2026-11-02T08:58:44.877012+00:00",
+          "line_items": [
+            {
+              "item_id": "concept",
+              "label": "策划",
+              "quantity": 1,
+              "unit_cost": 2,
+              "duration_minutes": 20,
+              "depends_on": [],
+              "subtotal": 2
+            },
+            {
+              "item_id": "design",
+              "label": "图文制作",
+              "quantity": 1,
+              "unit_cost": 4,
+              "duration_minutes": 30,
+              "depends_on": [
+                "concept"
+              ],
+              "subtotal": 4
+            },
+            {
+              "item_id": "publish",
+              "label": "发布",
+              "quantity": 1,
+              "unit_cost": 2,
+              "duration_minutes": 10,
+              "depends_on": [
+                "design"
+              ],
+              "subtotal": 2
+            }
+          ],
+          "estimated_total_cost": 8,
+          "duration_minutes": 60,
+          "projected_finish_at": "2026-11-02T09:58:44.877012+00:00",
+          "budget_gap": 0,
+          "time_gap_seconds": 0,
+          "missing": [],
+          "checks": {
+            "budget_ok": true,
+            "time_ok": true,
+            "dependencies_ok": false
+          },
+          "feasible": true,
+          "save_ready": false,
+          "estimate_id": "estimate-83c15022cd4e",
+          "script_id": null,
+          "plan_version": null
+        },
+        "estimate-f6aa6d276704": {
+          "option_id": "graduation_slides",
+          "catalog_version": "campus-v1",
+          "evaluated_at": "2026-11-02T08:58:52.673238+00:00",
+          "line_items": [
+            {
+              "item_id": "concept",
+              "label": "策划",
+              "quantity": 1,
+              "unit_cost": 2,
+              "duration_minutes": 20,
+              "depends_on": [],
+              "subtotal": 2
+            },
+            {
+              "item_id": "design",
+              "label": "图文制作",
+              "quantity": 1,
+              "unit_cost": 4,
+              "duration_minutes": 30,
+              "depends_on": [
+                "concept"
+              ],
+              "subtotal": 4
+            },
+            {
+              "item_id": "publish",
+              "label": "发布",
+              "quantity": 1,
+              "unit_cost": 2,
+              "duration_minutes": 10,
+              "depends_on": [
+                "design"
+              ],
+              "subtotal": 2
+            }
+          ],
+          "estimated_total_cost": 8,
+          "duration_minutes": 60,
+          "projected_finish_at": "2026-11-02T09:58:52.673238+00:00",
+          "budget_gap": 0,
+          "time_gap_seconds": 0,
+          "missing": [],
+          "checks": {
+            "budget_ok": true,
+            "time_ok": true,
+            "dependencies_ok": true
+          },
+          "feasible": true,
+          "save_ready": true,
+          "estimate_id": "estimate-f6aa6d276704",
+          "script_id": "script-7e34a5dc95f8",
+          "plan_version": 1
+        }
+      }
+    }
+  },
+  "run_id": "85035d9566be43b584506640c353561c",
+  "trace_path": "<project>\\examples\\final\\fault\\run\\trace.jsonl",
+  "exported_plan_path": "<project>\\examples\\final\\fault\\run\\plan.json"
+}

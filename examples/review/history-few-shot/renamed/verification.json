@@ -1,0 +1,80 @@
+{
+  "case": "renamed",
+  "task_id": "fewshot-renamed-1839936c3c",
+  "expected": "Observe preferred cost19 exceeds14, model evaluates cost11 alternative and explicitly adopts it, save alternative. Cheaper option is FIRST in this catalog.",
+  "passed": false,
+  "status": "incomplete",
+  "reason": {
+    "code": "step_limit",
+    "message": "达到最大执行轮数，未保存方案",
+    "feasibility_diagnosis": null,
+    "overdue_seconds": 0
+  },
+  "model_calls": 9,
+  "tool_calls": 10,
+  "choices": [
+    {
+      "iteration": 2,
+      "action": "evaluate_option",
+      "decision_summary": "优先评估访谈方案",
+      "option_id": "campus_interview"
+    },
+    {
+      "iteration": 3,
+      "action": "evaluate_option",
+      "decision_summary": "访谈方案超预算，评估纪念卡方案",
+      "option_id": "campus_interview"
+    },
+    {
+      "iteration": 4,
+      "action": "evaluate_option",
+      "decision_summary": "访谈方案超预算，评估纪念卡方案",
+      "option_id": "campus_interview"
+    },
+    {
+      "iteration": 5,
+      "action": "evaluate_option",
+      "decision_summary": "评估纪念卡方案",
+      "option_id": "campus_memory_cards"
+    },
+    {
+      "iteration": 6,
+      "action": "evaluate_option",
+      "decision_summary": "访谈方案超预算，评估纪念卡方案",
+      "option_id": "campus_interview"
+    },
+    {
+      "iteration": 7,
+      "action": "evaluate_option",
+      "decision_summary": "纪念卡活动满足预算，评估替代方案",
+      "option_id": "campus_memory_cards"
+    },
+    {
+      "iteration": 8,
+      "action": "evaluate_option",
+      "decision_summary": "访谈方案超预算，评估纪念卡方案",
+      "option_id": "campus_interview"
+    },
+    {
+      "iteration": 9,
+      "action": "evaluate_option",
+      "decision_summary": "纪念卡活动满足预算，评估替代方案",
+      "option_id": "campus_memory_cards"
+    },
+    {
+      "iteration": 10,
+      "action": "evaluate_option",
+      "decision_summary": "访谈方案超预算，评估纪念卡方案",
+      "option_id": "campus_interview"
+    }
+  ],
+  "checks": {
+    "live_only": true,
+    "bounded": true,
+    "successful_artifacts_retained": true,
+    "persisted_status_matches": true
+  },
+  "export_matches": true,
+  "cost": 19,
+  "exit_code": 3
+}

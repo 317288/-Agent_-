@@ -1,0 +1,29 @@
+{
+  "task_id": "fewshot-preferred_feasible-7bc1757614",
+  "status": null,
+  "replayed": false,
+  "mode": "live",
+  "missing_fields": [],
+  "error": {
+    "code": "task_id_conflict",
+    "message": "同一 task_id 的业务输入不同"
+  },
+  "result": {
+    "plan": null,
+    "steps": [],
+    "tool_results": [],
+    "estimated_total_cost": null,
+    "duration_minutes": null,
+    "projected_finish_at": null,
+    "saved_plan_ref": null,
+    "incomplete_reason": null,
+    "gaps_by_option": [],
+    "artifacts": {
+      "materials": {},
+      "scripts": {},
+      "estimates": {}
+    }
+  },
+  "run_id": "5c7eb72bb8f44470a1f83fc5414385e7",
+  "trace_path": "<project>\\examples\\live\\few-shot-batch\\acceptance-prechecks\\conflict\\run\\trace.jsonl"
+}

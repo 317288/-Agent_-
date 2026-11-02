@@ -1,0 +1,57 @@
+{
+  "cases": [
+    {
+      "case": "missing_budget",
+      "status": "needs_input",
+      "missing_fields": [
+        "budget"
+      ],
+      "replayed": false,
+      "error": null,
+      "exit_code": 2,
+      "model_calls": 0,
+      "tool_calls": 0,
+      "cost": null
+    },
+    {
+      "case": "missing_deadline",
+      "status": "needs_input",
+      "missing_fields": [
+        "deadline"
+      ],
+      "replayed": false,
+      "error": null,
+      "exit_code": 2,
+      "model_calls": 0,
+      "tool_calls": 0,
+      "cost": null
+    },
+    {
+      "case": "replay",
+      "status": "completed",
+      "missing_fields": [],
+      "replayed": true,
+      "error": null,
+      "exit_code": 0,
+      "model_calls": 0,
+      "tool_calls": 0,
+      "cost": 12
+    },
+    {
+      "case": "conflict",
+      "status": null,
+      "missing_fields": [],
+      "replayed": false,
+      "error": {
+        "code": "task_id_conflict",
+        "message": "\u540c\u4e00 task_id \u7684\u4e1a\u52a1\u8f93\u5165\u4e0d\u540c"
+      },
+      "exit_code": 5,
+      "model_calls": 0,
+      "tool_calls": 0,
+      "cost": null
+    }
+  ],
+  "plans_before": 1,
+  "plans_after": 1
+}

@@ -1,0 +1,59 @@
+{
+  "case": "budget",
+  "passed": true,
+  "task_id": "review-budget-988a417573d8",
+  "status": "completed",
+  "reason": null,
+  "cost": 8,
+  "cli_exit": 0,
+  "model_calls": 3,
+  "tool_calls": 6,
+  "choices": [
+    [
+      2,
+      {
+        "action": "evaluate_option",
+        "decision_summary": "评估毕业季短视频活动，确认其符合主题并进行估算",
+        "option_id": "graduation_video"
+      }
+    ],
+    [
+      3,
+      {
+        "action": "evaluate_option",
+        "decision_summary": "评估图文方案，预算内，确认采用并进入制作",
+        "option_id": "graduation_slides"
+      }
+    ],
+    [
+      4,
+      {
+        "action": "proceed_with_plan",
+        "decision_summary": "实际估算满足预算和时间约束，确认采用图文方案并进入制作",
+        "estimate_id": "estimate-6f30ce1f420b",
+        "option_id": "graduation_slides"
+      }
+    ]
+  ],
+  "checks": {
+    "live_only": true,
+    "bounded": true,
+    "successful_artifacts_retained": true,
+    "persisted_status_matches": true,
+    "persisted_plan_matches_output": true,
+    "cost_correct": true,
+    "duration_correct": true,
+    "budget_ok": true,
+    "deadline_ok": true,
+    "save_ready": true,
+    "script_estimate_match": true,
+    "export_matches": true
+  },
+  "criteria": {
+    "feasible_plan_completed": true,
+    "observed_video_over_budget": true,
+    "model_chose_alternative_after_observation": true,
+    "direct_slides_without_over_budget_is_not_replanning": false,
+    "explicitly_adopted_saved_option": true
+  }
+}

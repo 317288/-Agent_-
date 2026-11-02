@@ -1,0 +1,7 @@
+{
+  "catalog_version": "campus-v1",
+  "materials": [
+    {"material_id": "campus-photo-01", "kind": "campus_photo", "title": "校园毕业合影示意素材", "content": "合成场景：毕业生在图书馆前合影。仅文字素材描述，非真实照片。", "tags": ["校园", "毕业", "毕业季"], "synthetic": true},
+    {"material_id": "graduate-message-01", "kind": "graduate_message", "title": "毕业寄语示例", "content": "合成寄语：把校园的光带向下一站，愿我们各自闪耀。", "tags": ["校园", "毕业", "毕业季"], "synthetic": true}
+  ]
+}

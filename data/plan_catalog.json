@@ -1,0 +1,25 @@
+{
+  "catalog_version": "campus-v1",
+  "options": {
+    "graduation_video": {
+      "title": "毕业季短视频活动",
+      "required_kinds": ["campus_photo", "graduate_message"],
+      "required_sections": ["开场", "主体", "行动号召"],
+      "items": [
+        {"item_id": "concept", "label": "策划", "quantity": 1, "unit_cost": 2, "duration_minutes": 20, "depends_on": []},
+        {"item_id": "shoot", "label": "拍摄", "quantity": 1, "unit_cost": 6, "duration_minutes": 60, "depends_on": ["concept"]},
+        {"item_id": "publish", "label": "剪辑发布", "quantity": 1, "unit_cost": 4, "duration_minutes": 40, "depends_on": ["shoot"]}
+      ]
+    },
+    "graduation_slides": {
+      "title": "毕业季图文活动",
+      "required_kinds": ["campus_photo", "graduate_message"],
+      "required_sections": ["开场", "主体", "行动号召"],
+      "items": [
+        {"item_id": "concept", "label": "策划", "quantity": 1, "unit_cost": 2, "duration_minutes": 20, "depends_on": []},
+        {"item_id": "design", "label": "图文制作", "quantity": 1, "unit_cost": 4, "duration_minutes": 30, "depends_on": ["concept"]},
+        {"item_id": "publish", "label": "发布", "quantity": 1, "unit_cost": 2, "duration_minutes": 10, "depends_on": ["design"]}
+      ]
+    }
+  }
+}

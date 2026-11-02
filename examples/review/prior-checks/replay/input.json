@@ -1,0 +1,7 @@
+{
+  "task_id": "fewshot-preferred_feasible-7bc1757614",
+  "theme": "校园毕业季",
+  "budget": 20,
+  "deadline": "2026-11-02T13:38:19.356940+00:00",
+  "instructions": "优先评估视频方案 graduation_video；预算不允许时接受图文方案 graduation_slides。请根据实际工具估算作决定，完成并保存可行的活动方案。"
+}

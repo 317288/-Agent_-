@@ -1,0 +1,55 @@
+{
+  "case": "normal",
+  "passed": true,
+  "task_id": "review-normal-2d04009bfd10",
+  "status": "completed",
+  "reason": null,
+  "cost": 8,
+  "cli_exit": 0,
+  "model_calls": 3,
+  "tool_calls": 6,
+  "choices": [
+    [
+      2,
+      {
+        "action": "evaluate_option",
+        "decision_summary": "评估毕业季短视频活动，确认所需素材满足预算和时间要求",
+        "option_id": "graduation_video"
+      }
+    ],
+    [
+      3,
+      {
+        "action": "evaluate_option",
+        "decision_summary": "评估毕业季图文活动，确认其可行性",
+        "option_id": "graduation_slides"
+      }
+    ],
+    [
+      4,
+      {
+        "action": "proceed_with_plan",
+        "decision_summary": "实际估算满足预算和时间约束，确认采用并进入制作",
+        "estimate_id": "estimate-000a5ab6c1a4",
+        "option_id": "graduation_slides"
+      }
+    ]
+  ],
+  "checks": {
+    "live_only": true,
+    "bounded": true,
+    "successful_artifacts_retained": true,
+    "persisted_status_matches": true,
+    "persisted_plan_matches_output": true,
+    "cost_correct": true,
+    "duration_correct": true,
+    "budget_ok": true,
+    "deadline_ok": true,
+    "save_ready": true,
+    "script_estimate_match": true,
+    "export_matches": true
+  },
+  "criteria": {
+    "explicitly_adopted_saved_option": true
+  }
+}

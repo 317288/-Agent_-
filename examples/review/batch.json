@@ -1,0 +1,28 @@
+{
+  "cases": [
+    "normal",
+    "budget",
+    "fault",
+    "infeasible"
+  ],
+  "attempts_per_case": 1,
+  "max_steps": 10,
+  "expected": {
+    "normal": "explicit adoption and saved plan",
+    "budget": "12 over budget then model selects 8, confirms and saves",
+    "fault": "one injected script failure retained, independent model recovery and save",
+    "infeasible": "model stop after actual quotes, minimum gap 2, no save"
+  },
+  "source_sha256": {
+    "src/content_agent/agent.py": "b09bc62ba243db1bcf531075c480d4a8fdbac668d30a94e1822fccde1bdeb430",
+    "src/content_agent/cli.py": "5566bf12b51dc70a32c8fea26073a9ac9d809d3d6a015cff53baaccc09cd457e",
+    "src/content_agent/context.py": "2b02e7e9d6d3378ae78edc807b22dbb75363a8328c81a165b0d02c1d2373f8cb",
+    "src/content_agent/diagnostics.py": "2229cdd68d5c6526b4b60ec9fa988728efef7af6c3350d827784e16049e494c4",
+    "src/content_agent/model.py": "174e3f65501cbdb6ae9aa2ff391000474c26407beb161da6c67dca6619c3492f",
+    "src/content_agent/schemas.py": "b42a54a1f974376b22c0df2665e9194aad571b9b70632fd21ae8eabd04c26b30",
+    "src/content_agent/staged.py": "f53ee119158752546a3d04faef8e6c494fd4fa52afb50ecc676d804188647f82",
+    "src/content_agent/state.py": "dc9398303e79cc689ad5a43dc1397106f664e70f0c19c363ce7f6d6049af51ee",
+    "src/content_agent/tools.py": "f0493ac6eae31e6ed78437d1acabb029bf1001e58ccfeea77622be2f85239ae4",
+    "src/content_agent/__init__.py": "6150ba13811ee8795bfd219fed6448bdfababfbde4ff52b9b2331226c9585516"
+  }
+}

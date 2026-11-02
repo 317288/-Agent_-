@@ -1,0 +1,144 @@
+{
+  "activity_steps": [
+    {
+      "depends_on": [],
+      "duration_minutes": 20,
+      "item_id": "concept",
+      "label": "策划",
+      "quantity": 1,
+      "status": "planned",
+      "subtotal": 2,
+      "unit_cost": 2
+    },
+    {
+      "depends_on": [
+        "concept"
+      ],
+      "duration_minutes": 30,
+      "item_id": "design",
+      "label": "图文制作",
+      "quantity": 1,
+      "status": "planned",
+      "subtotal": 4,
+      "unit_cost": 4
+    },
+    {
+      "depends_on": [
+        "design"
+      ],
+      "duration_minutes": 10,
+      "item_id": "publish",
+      "label": "发布",
+      "quantity": 1,
+      "status": "planned",
+      "subtotal": 2,
+      "unit_cost": 2
+    }
+  ],
+  "estimate": {
+    "budget_gap": 0,
+    "catalog_version": "campus-v1",
+    "checks": {
+      "budget_ok": true,
+      "dependencies_ok": true,
+      "time_ok": true
+    },
+    "duration_minutes": 60,
+    "estimated_total_cost": 8,
+    "evaluated_at": "2026-11-02T08:58:26.698536+00:00",
+    "feasible": true,
+    "line_items": [
+      {
+        "depends_on": [],
+        "duration_minutes": 20,
+        "item_id": "concept",
+        "label": "策划",
+        "quantity": 1,
+        "subtotal": 2,
+        "unit_cost": 2
+      },
+      {
+        "depends_on": [
+          "concept"
+        ],
+        "duration_minutes": 30,
+        "item_id": "design",
+        "label": "图文制作",
+        "quantity": 1,
+        "subtotal": 4,
+        "unit_cost": 4
+      },
+      {
+        "depends_on": [
+          "design"
+        ],
+        "duration_minutes": 10,
+        "item_id": "publish",
+        "label": "发布",
+        "quantity": 1,
+        "subtotal": 2,
+        "unit_cost": 2
+      }
+    ],
+    "missing": [],
+    "option_id": "graduation_slides",
+    "plan_version": 1,
+    "projected_finish_at": "2026-11-02T09:58:26.698536+00:00",
+    "save_ready": true,
+    "script_id": "script-61d1f9994351",
+    "source_estimate_id": "estimate-25d8ab867a3b",
+    "time_gap_seconds": 0
+  },
+  "option_id": "graduation_slides",
+  "plan_version": 1,
+  "saved_at": "2026-11-02T08:58:26.698536+00:00",
+  "saved_plan_id": "plan-560fb85a4a33",
+  "script": {
+    "generation_mode": "template",
+    "material_ids": [
+      "campus-photo-01",
+      "graduate-message-01"
+    ],
+    "missing_sections": [],
+    "option_id": "graduation_slides",
+    "plan_version": 1,
+    "required_sections": [
+      "开场",
+      "主体",
+      "行动号召"
+    ],
+    "script_id": "script-61d1f9994351",
+    "sections": [
+      {
+        "material_ids": [
+          "campus-photo-01",
+          "graduate-message-01"
+        ],
+        "name": "开场",
+        "text": "校园毕业季：毕业季图文活动，用校园记忆开启毕业故事。"
+      },
+      {
+        "material_ids": [
+          "campus-photo-01",
+          "graduate-message-01"
+        ],
+        "name": "主体",
+        "text": "合成场景：毕业生在图书馆前合影。仅文字素材描述，非真实照片。；合成寄语：把校园的光带向下一站，愿我们各自闪耀。"
+      },
+      {
+        "material_ids": [
+          "campus-photo-01",
+          "graduate-message-01"
+        ],
+        "name": "行动号召",
+        "text": "邀请同学分享毕业寄语，投稿前确认肖像及内容授权；本项目仅输出计划，不实际发布。"
+      }
+    ]
+  },
+  "task": {
+    "budget": 20,
+    "deadline": "2026-11-03T08:58:08.306400+00:00",
+    "task_id": "review-normal-2d04009bfd10",
+    "theme": "校园毕业季"
+  }
+}

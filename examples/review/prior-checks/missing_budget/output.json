@@ -1,0 +1,28 @@
+{
+  "task_id": "precheck-missing_budget",
+  "status": "needs_input",
+  "replayed": false,
+  "mode": "live",
+  "missing_fields": [
+    "budget"
+  ],
+  "error": null,
+  "result": {
+    "plan": null,
+    "steps": [],
+    "tool_results": [],
+    "estimated_total_cost": null,
+    "duration_minutes": null,
+    "projected_finish_at": null,
+    "saved_plan_ref": null,
+    "incomplete_reason": null,
+    "gaps_by_option": [],
+    "artifacts": {
+      "materials": {},
+      "scripts": {},
+      "estimates": {}
+    }
+  },
+  "run_id": "030df340013f42aa82e2a3e376180eef",
+  "trace_path": "<project>\\examples\\live\\few-shot-batch\\acceptance-prechecks\\missing_budget\\run\\trace.jsonl"
+}

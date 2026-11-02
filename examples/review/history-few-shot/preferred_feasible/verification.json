@@ -1,0 +1,53 @@
+{
+  "case": "preferred_feasible",
+  "task_id": "fewshot-preferred_feasible-7bc1757614",
+  "expected": "Preferred cost12 fits20; model explicitly adopts preferred after estimate and saves it. Alternative completion alone does not meet preference criterion.",
+  "passed": true,
+  "status": "completed",
+  "reason": null,
+  "model_calls": 4,
+  "tool_calls": 7,
+  "choices": [
+    {
+      "iteration": 2,
+      "action": "evaluate_option",
+      "decision_summary": "优先评估视频方案",
+      "option_id": "graduation_video"
+    },
+    {
+      "iteration": 3,
+      "action": "evaluate_option",
+      "decision_summary": "视频方案可行，费用满足预算，继续评估图文方案",
+      "option_id": "graduation_video"
+    },
+    {
+      "iteration": 4,
+      "action": "evaluate_option",
+      "decision_summary": "视频方案可行，费用在预算内，评估图文方案作为备选",
+      "option_id": "graduation_video"
+    },
+    {
+      "iteration": 5,
+      "action": "proceed_with_plan",
+      "decision_summary": "实际估算满足预算和时间约束，确认采用并进入制作",
+      "estimate_id": "estimate-6d2a3414d120",
+      "option_id": "graduation_video"
+    }
+  ],
+  "checks": {
+    "live_only": true,
+    "bounded": true,
+    "successful_artifacts_retained": true,
+    "persisted_status_matches": true,
+    "persisted_plan_matches_output": true,
+    "cost_correct": true,
+    "duration_correct": true,
+    "budget_ok": true,
+    "deadline_ok": true,
+    "save_ready": true,
+    "script_estimate_match": true
+  },
+  "export_matches": true,
+  "cost": 12,
+  "exit_code": 0
+}

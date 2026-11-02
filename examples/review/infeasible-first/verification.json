@@ -1,0 +1,55 @@
+{
+  "case": "infeasible",
+  "passed": true,
+  "task_id": "review-infeasible-1a9bfe8cd15e",
+  "status": "incomplete",
+  "reason": {
+    "code": "no_feasible_plan",
+    "message": "所有候选均超预算，最高费用12，至少缺少6个模拟单位，停止未完成任务",
+    "feasibility_diagnosis": "no_feasible_plan",
+    "overdue_seconds": 0
+  },
+  "cost": 8,
+  "cli_exit": 3,
+  "model_calls": 3,
+  "tool_calls": 3,
+  "choices": [
+    [
+      2,
+      {
+        "action": "evaluate_option",
+        "decision_summary": "评估毕业季短视频活动，确认所需素材满足预算要求",
+        "option_id": "graduation_video"
+      }
+    ],
+    [
+      3,
+      {
+        "action": "evaluate_option",
+        "decision_summary": "评估毕业季图文活动，实际估算超预算，考虑其他方案",
+        "option_id": "graduation_slides"
+      }
+    ],
+    [
+      4,
+      {
+        "action": "stop",
+        "decision_summary": "所有候选均超预算，最高费用12，至少缺少6个模拟单位，停止未完成任务"
+      }
+    ]
+  ],
+  "checks": {
+    "live_only": true,
+    "bounded": true,
+    "successful_artifacts_retained": true,
+    "persisted_status_matches": true,
+    "export_matches": true
+  },
+  "criteria": {
+    "program_returned_verified_no_feasible_plan": true,
+    "minimum_budget_gap": 2,
+    "model_stopped_after_infeasible_tool_observation": true,
+    "not_step_limit": true,
+    "all_candidates_observed": true
+  }
+}

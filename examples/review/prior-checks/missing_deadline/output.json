@@ -1,0 +1,28 @@
+{
+  "task_id": "precheck-missing_deadline",
+  "status": "needs_input",
+  "replayed": false,
+  "mode": "live",
+  "missing_fields": [
+    "deadline"
+  ],
+  "error": null,
+  "result": {
+    "plan": null,
+    "steps": [],
+    "tool_results": [],
+    "estimated_total_cost": null,
+    "duration_minutes": null,
+    "projected_finish_at": null,
+    "saved_plan_ref": null,
+    "incomplete_reason": null,
+    "gaps_by_option": [],
+    "artifacts": {
+      "materials": {},
+      "scripts": {},
+      "estimates": {}
+    }
+  },
+  "run_id": "c37508a107dd41e49bee61bcea17e68c",
+  "trace_path": "<project>\\examples\\live\\few-shot-batch\\acceptance-prechecks\\missing_deadline\\run\\trace.jsonl"
+}

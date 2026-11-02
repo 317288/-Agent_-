@@ -1,0 +1,67 @@
+{
+  "case": "fault",
+  "passed": true,
+  "task_id": "review-fault-ce7798cdc8e3",
+  "status": "completed",
+  "reason": null,
+  "cost": 8,
+  "cli_exit": 0,
+  "model_calls": 4,
+  "tool_calls": 7,
+  "choices": [
+    [
+      2,
+      {
+        "action": "evaluate_option",
+        "decision_summary": "评估毕业季短视频活动，确认所需素材已备齐",
+        "option_id": "graduation_video"
+      }
+    ],
+    [
+      3,
+      {
+        "action": "evaluate_option",
+        "decision_summary": "评估毕业季图文活动，确认其可行性",
+        "option_id": "graduation_slides"
+      }
+    ],
+    [
+      4,
+      {
+        "action": "proceed_with_plan",
+        "decision_summary": "实际估算满足约束，确认采用并进入制作",
+        "estimate_id": "estimate-83c15022cd4e",
+        "option_id": "graduation_slides"
+      }
+    ],
+    [
+      5,
+      {
+        "action": "proceed_with_plan",
+        "decision_summary": "实际估算满足约束，确认采用并进入制作",
+        "estimate_id": "estimate-83c15022cd4e",
+        "option_id": "graduation_slides"
+      }
+    ]
+  ],
+  "checks": {
+    "live_only": true,
+    "bounded": true,
+    "successful_artifacts_retained": true,
+    "persisted_status_matches": true,
+    "persisted_plan_matches_output": true,
+    "cost_correct": true,
+    "duration_correct": true,
+    "budget_ok": true,
+    "deadline_ok": true,
+    "save_ready": true,
+    "script_estimate_match": true,
+    "export_matches": true
+  },
+  "criteria": {
+    "program_handled_failure_correctly": true,
+    "model_recovered_task": true,
+    "injected_failure_count": 1,
+    "explicitly_adopted_saved_option": true
+  }
+}

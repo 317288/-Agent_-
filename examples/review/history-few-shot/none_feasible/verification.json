@@ -1,0 +1,80 @@
+{
+  "case": "none_feasible",
+  "task_id": "fewshot-none_feasible-538bc65dce",
+  "expected": "Model stops after real infeasible observation; incomplete/no_feasible_plan, minimum gap2, no saved plan. step_limit is failure.",
+  "passed": false,
+  "status": "incomplete",
+  "reason": {
+    "code": "step_limit",
+    "message": "达到最大执行轮数，未保存方案",
+    "feasibility_diagnosis": "no_feasible_plan",
+    "overdue_seconds": 0
+  },
+  "model_calls": 9,
+  "tool_calls": 10,
+  "choices": [
+    {
+      "iteration": 2,
+      "action": "evaluate_option",
+      "decision_summary": "评估毕业季短视频活动",
+      "option_id": "graduation_video"
+    },
+    {
+      "iteration": 3,
+      "action": "evaluate_option",
+      "decision_summary": "毕业季短视频活动超预算，评估其他方案",
+      "option_id": "graduation_video"
+    },
+    {
+      "iteration": 4,
+      "action": "evaluate_option",
+      "decision_summary": "毕业季短视频活动超预算，评估其他方案",
+      "option_id": "graduation_video"
+    },
+    {
+      "iteration": 5,
+      "action": "evaluate_option",
+      "decision_summary": "毕业季短视频活动超预算，评估其他方案",
+      "option_id": "graduation_video"
+    },
+    {
+      "iteration": 6,
+      "action": "evaluate_option",
+      "decision_summary": "毕业季短视频活动超预算，评估其他方案",
+      "option_id": "graduation_video"
+    },
+    {
+      "iteration": 7,
+      "action": "evaluate_option",
+      "decision_summary": "毕业季短视频活动超预算，评估其他方案",
+      "option_id": "graduation_video"
+    },
+    {
+      "iteration": 8,
+      "action": "evaluate_option",
+      "decision_summary": "毕业季短视频活动超预算，评估其他方案",
+      "option_id": "graduation_video"
+    },
+    {
+      "iteration": 9,
+      "action": "evaluate_option",
+      "decision_summary": "毕业季短视频活动超预算，评估其他方案",
+      "option_id": "graduation_video"
+    },
+    {
+      "iteration": 10,
+      "action": "evaluate_option",
+      "decision_summary": "毕业季短视频活动超预算，评估其他方案",
+      "option_id": "graduation_video"
+    }
+  ],
+  "checks": {
+    "live_only": true,
+    "bounded": true,
+    "successful_artifacts_retained": true,
+    "persisted_status_matches": true
+  },
+  "export_matches": true,
+  "cost": 12,
+  "exit_code": 3
+}

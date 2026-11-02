@@ -1,0 +1,7 @@
+{
+  "task_id": "fewshot-renamed-1839936c3c",
+  "theme": "校园毕业季",
+  "budget": 14,
+  "deadline": "2026-11-02T13:38:19.352220+00:00",
+  "instructions": "优先评估访谈方案 campus_interview；预算不允许时接受纪念卡方案 campus_memory_cards。请根据实际工具估算作决定，完成并保存可行的活动方案。"
+}

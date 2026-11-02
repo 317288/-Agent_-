@@ -1,0 +1,7 @@
+{
+  "task_id": "fewshot-none_feasible-538bc65dce",
+  "theme": "校园毕业季",
+  "budget": 6,
+  "deadline": "2026-11-02T13:38:19.354900+00:00",
+  "instructions": "严格遵守预算；如没有可行方案，说明预算缺口并停止，不得保存超预算方案。"
+}

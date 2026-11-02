@@ -1,0 +1,76 @@
+{
+  "cases": [
+    {
+      "name": "original",
+      "budget": 10,
+      "preferred": "graduation_video",
+      "alternative": "graduation_slides",
+      "instructions": "优先评估视频方案 graduation_video；预算不允许时接受图文方案 graduation_slides。请根据实际工具估算作决定，完成并保存可行的活动方案。",
+      "costs": {
+        "graduation_video": 12,
+        "graduation_slides": 8
+      },
+      "expected": "Observe preferred over budget, model evaluates alternative then explicitly adopts its feasible estimate; save alternative."
+    },
+    {
+      "name": "renamed",
+      "budget": 14,
+      "preferred": "campus_interview",
+      "alternative": "campus_memory_cards",
+      "instructions": "优先评估访谈方案 campus_interview；预算不允许时接受纪念卡方案 campus_memory_cards。请根据实际工具估算作决定，完成并保存可行的活动方案。",
+      "costs": {
+        "campus_memory_cards": 11,
+        "campus_interview": 19
+      },
+      "expected": "Observe preferred cost19 exceeds14, model evaluates cost11 alternative and explicitly adopts it, save alternative. Cheaper option is FIRST in this catalog."
+    },
+    {
+      "name": "none_feasible",
+      "budget": 6,
+      "preferred": null,
+      "alternative": null,
+      "instructions": "严格遵守预算；如没有可行方案，说明预算缺口并停止，不得保存超预算方案。",
+      "costs": {
+        "graduation_video": 12,
+        "graduation_slides": 8
+      },
+      "expected": "Model stops after real infeasible observation; incomplete/no_feasible_plan, minimum gap2, no saved plan. step_limit is failure."
+    },
+    {
+      "name": "preferred_feasible",
+      "budget": 20,
+      "preferred": "graduation_video",
+      "alternative": "graduation_slides",
+      "instructions": "优先评估视频方案 graduation_video；预算不允许时接受图文方案 graduation_slides。请根据实际工具估算作决定，完成并保存可行的活动方案。",
+      "costs": {
+        "graduation_video": 12,
+        "graduation_slides": 8
+      },
+      "expected": "Preferred cost12 fits20; model explicitly adopts preferred after estimate and saves it. Alternative completion alone does not meet preference criterion."
+    }
+  ],
+  "source_hashes": {
+    "src\\content_agent\\agent.py": "efa5f923c2f57a959c4a8c466d962c1fdae67861bc53c4bf0cf5cc66376b5e8b",
+    "src\\content_agent\\cli.py": "5566bf12b51dc70a32c8fea26073a9ac9d809d3d6a015cff53baaccc09cd457e",
+    "src\\content_agent\\context.py": "2b02e7e9d6d3378ae78edc807b22dbb75363a8328c81a165b0d02c1d2373f8cb",
+    "src\\content_agent\\diagnostics.py": "2229cdd68d5c6526b4b60ec9fa988728efef7af6c3350d827784e16049e494c4",
+    "src\\content_agent\\model.py": "174e3f65501cbdb6ae9aa2ff391000474c26407beb161da6c67dca6619c3492f",
+    "src\\content_agent\\schemas.py": "b42a54a1f974376b22c0df2665e9194aad571b9b70632fd21ae8eabd04c26b30",
+    "src\\content_agent\\staged.py": "ab0b6e7ed6fae1e69020f2eaa6037379ad260551d2367cc550cc0269f1a934fc",
+    "src\\content_agent\\state.py": "dc9398303e79cc689ad5a43dc1397106f664e70f0c19c363ce7f6d6049af51ee",
+    "src\\content_agent\\tools.py": "f0493ac6eae31e6ed78437d1acabb029bf1001e58ccfeea77622be2f85239ae4",
+    "src\\content_agent\\__init__.py": "6150ba13811ee8795bfd219fed6448bdfababfbde4ff52b9b2331226c9585516"
+  },
+  "system_prompt": "你负责内容方案选择和异常处理，只输出JSON公开动作，不输出内部思维。\nevaluate_option(option_id)：仅评估候选，执行一次估算，不表示采用或开始制作。\nproceed_with_plan(option_id, estimate_id)：明确确认采用已有实际估算且预算、时间可行的方案，授权程序生成脚本、绑定重新估算、校验并保存。\nstop：停止未完成任务。retry：仅在工具错误或部分成功后，决定重试该工具。\n评估结果将交回你。观察可行结果后，要制作就输出proceed_with_plan及真实estimate_id；重复evaluate_option只会重复估算。\n预算和时间是硬约束，偏好是软要求；超预算时自行选择其他候选或停止。错误后自行重试、改选或停止。不得虚构结果、ID或成功。\n以下两段仅为合成示例，不是当前任务事实；示例名称、ID、金额不可用于当前任务。实际动作只能引用当前工具结果。\n示例一：社区阅读节，预算30。首选reading_stage实际估算38、超预算8。\n模型：{\"action\":\"evaluate_option\",\"option_id\":\"reading_leaflet\",\"decision_summary\":\"首选超预算，评估允许的替代方案\"}\n工具：reading_leaflet估算24、时间可行、estimate_id=demo-reading-estimate，尚未制作。\n模型：{\"action\":\"proceed_with_plan\",\"option_id\":\"reading_leaflet\",\"estimate_id\":\"demo-reading-estimate\",\"decision_summary\":\"实际估算满足约束，确认采用并进入制作\"}\n示例二：山地观鸟宣传，预算40。已实际评估全部候选bird_exhibit费用55、bird_audio费用47，时间均可行，最低缺口7。\n模型：{\"action\":\"stop\",\"decision_summary\":\"全部候选均超预算，最低费用47，至少缺少7个模拟单位，停止未完成任务\"}",
+  "config": {
+    "AGENT_BASE_URL": "http://localhost:11434/v1",
+    "AGENT_MODEL": "qwen2.5:7b-instruct-q4_K_M",
+    "AGENT_PROTOCOL": "ollama",
+    "AGENT_RESPONSE_FORMAT": "json_schema",
+    "AGENT_NUM_CTX": "8192",
+    "AGENT_TIMEOUT_SECONDS": "180"
+  },
+  "max_steps": 10,
+  "attempts_per_case": 1,
+  "temperature": 0
+}
